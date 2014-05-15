@@ -1,0 +1,16 @@
+body { }
+
+article {
+	background:#fff;
+	padding:0 0 50px 0;
+	position:relative;
+	top:0px;
+	-webkit-transition:all 750ms ease;
+	   -moz-transition:all 750ms ease;
+		-ms-transition:all 750ms ease;
+			transition:all 750ms ease;
+}
+
+footer {
+
+}
