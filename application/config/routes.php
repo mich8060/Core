@@ -40,6 +40,7 @@
 
 $route['default_controller'] = "site";
 $route['404_override'] = '';
+$route['forms/(:any)'] = 'forms';
 $route['services/(:any)'] = 'services';
 $route['(:any)'] = 'site';
 

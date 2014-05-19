@@ -44,14 +44,14 @@
 	<div class="grid_1">
 		<h1>Typography</h1>
 	</div>
-	<div class="grid_3">
+	<div class="grid_2">
 		<h1>Headline One</h1>
 		<h2>Headline Two</h2>
 		<h3>Headline Three</h3>
 		<h4>Headline Fourth</h4>
 		<h5>Headline Five</h5>
 	</div>
-	<div class="grid_3">
+	<div class="grid_2">
 		<h1 class="light">Headline One</h1>
 		<h2 class="light">Headline Two</h2>
 		<h3 class="light">Headline Three</h3>
@@ -59,7 +59,7 @@
 		<h5 class="light">Headline Five</h5>
 	</div>
 	<div class="clear"></div>
-	<div class="grid_3">
+	<div class="grid_1">
 		<h5>Lead Paragraph</h5>
 		<p class="lead">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
@@ -75,25 +75,9 @@
 			nibh non, feugiat blandit lectus.
 		</p>
 	</div>
-	<div class="grid_3">
+	<div class="grid_1">
 		<h5>Regular Paragraph</h5>
 		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
-			justo quis erat consequat faucibus eu at sapien. Ut sollicitudin 
-			erat non cursus sollicitudin. Donec ultrices tortor quis dolor 
-			condimentum, sed hendrerit elit suscipit. Fusce in enim eget neque 
-			rutrum placerat. Aenean a nibh eu nunc pulvinar scelerisque. 
-			Morbi mollis dolor non urna pulvinar sollicitudin. Donec nec 
-			bibendum augue. Sed molestie, felis nec faucibus fermentum, ipsum 
-			libero auctor turpis, sed dictum lorem orci sit amet justo. 
-			Vivamus sit amet ornare turpis, vitae venenatis magna. Pellentesque 
-			eu sollicitudin turpis, eget porta nunc. Nam est justo, mattis id 
-			nibh non, feugiat blandit lectus.
-		</p>
-	</div>
-	<div class="grid_3">
-		<h5>Tight Paragraph</h5>
-		<p class="tight">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
 			justo quis erat consequat faucibus eu at sapien. Ut sollicitudin 
 			erat non cursus sollicitudin. Donec ultrices tortor quis dolor 
@@ -126,7 +110,7 @@
 	<div class="grid_1">
 		<h1>List Types</h1>
 	</div>
-	<div class="grid_4">
+	<div class="grid_2">
 		<h5>Ordered List</h5>
 		<ol>
 			<li>List item</li>
@@ -146,7 +130,7 @@
 			</li>
 		</ol>
 	</div>
-	<div class="grid_4">
+	<div class="grid_2">
 		<h5>Unordered List</h5>
 		<ul>
 			<li>List item</li>
@@ -166,7 +150,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="grid_4">
+	<div class="grid_2">
 		<h5>Definition List</h5>
 		<dl>
 			<dt>Definition list title</dt>
@@ -177,7 +161,7 @@
 			<dd>Definition list data</dd>
 		</dl>
 	</div>
-	<div class="grid_4">
+	<div class="grid_2">
 		<h5>Definition List</h5>
 		<dl class="spec">
 			<dt>Definition list title</dt>
@@ -228,11 +212,35 @@ $(document).ready(function(){
 	alert('Ready!');
 });
 </pre>
+<hr />
+<h2 class="normal">Text Level Semantics</h2>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+	faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+</p>
 		<address>Address</address><br />
-		<blockquote>Blockquote</blockquote><br />
-		<abbr title="abbr">abbr</abbr><br />
-		<sup>Superscript</sup>
-		<sub>Subscript</sub><br />
+		<table>
+			<thead>
+				<tr>
+					<th>Tag</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>&lt;abbr&gt;</code></td>
+					<td><abbr title="Tooltip Example" class="tooltip">abbr</abbr></td>
+				</tr>
+				<tr>
+					<td><code>&lt;sup&gt;</code></td>
+					<td><sup>Superscript</sup></td>
+				</tr>
+				<tr>
+					<td><code>&lt;sub&gt;</code></td>
+					<td><sub>Subscript</sub></td>
+				</tr>
+			</tbody>
+		</table>
 		<ins>ins</ins><br />
 		<del>del</del><br />
 		<code>code</code><br />
@@ -250,9 +258,51 @@ $(document).ready(function(){
 	</div>
 	<div class="clear"></div>
 	<div class="grid_1">
-		<h1>Inputs</h1>
-	</div>
-	<div class="grid_1">
+		<hr />
+		<h2 class="normal">Blockquotes</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
+		<blockquote>Blockquote</blockquote>
+		<hr />
+		<h2 class="normal">Breakpoints</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Size</th>
+					<th>Breakpoint</th>
+					<th>Device</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Small</td>
+					<td>Up to 760px</td>
+					<td>Phones - Both Portrait &amp; Landscape</td>
+				</tr>
+				<tr>
+					<td>Medium</td>
+					<td>761px to 1280px</td>
+					<td>Tablet &amp; Laptop</td>
+				</tr>
+				<tr>
+					<td>Large</td>
+					<td>1281px and up</td>
+					<td>Desktop</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr />
+		<h2 class="normal">Inputs</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<input type="text" placeholder="Text" />
 		<input type="tel" placeholder="Telephone" />
 		<input type="number" placeholder="Number" />
@@ -263,30 +313,70 @@ $(document).ready(function(){
 		<input type="datetime" value="2009-11-13" />
 		<input type="datetime-local" value="2009-11-13" />
 		<input type="month" />
+		<hr />
+		<h2 class="normal">Textarea</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<textarea placeholder="Textarea"></textarea>
+		<hr />
+		<h2 class="normal">Checkboxes</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<input type="checkbox" id="custom" />
 		<label for="custom">Checkbox</label>
+		<input type="checkbox" id="custom2" checked="checked" />
+		<label for="custom2">Checkbox</label>
+		<hr />
+		<h2 class="normal">Radio Inputs</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<input type="radio" name="radio" id="radio1" checked="checked" />
 		<label for="radio1">Radio Button</label>
 		<input type="radio" name="radio" id="radio2" />
 		<label for="radio2">Radio Button</label>
 		<input type="radio" name="radio" id="radio3" />
 		<label for="radio3">Radio Button</label>
+		<hr />
+		<h2 class="normal">Dropdown</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<select>
 			<option value="0">&ndash; Select an Option &ndash;</option>
 			<option value="1">Option 1</option>
 			<option value="2">Option Two</option>
 		</select>
+		<hr />
+		<h2 class="normal">Range</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<input type="range" min="1" max="10" />
-		<input type="file" />
-		<input type="submit" />
+		<hr />
+		<h2 class="normal">Button</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
+		<input type="file" id="file" />
+		<label for="file">Select a File</label>
+		<input type="submit" value="Submit" />
 		<input type="button" value="Button" />
 		<input type="reset" />
-	</div>
-	<div class="grid_1">
-		<h1>Tables</h1>
-	</div>
-	<div class="grid_1">
+		<hr />
+		<h2 class="normal">Tables</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<table>
 	    	<tr>
 	      		<th>Head</th>
@@ -324,9 +414,12 @@ $(document).ready(function(){
 	      		<td>Table</td>
 	    	</tr>
 	  	</table>
-	</div>
-	<div class="grid_1">
-		<h1>Color Swatches</h1>
+		<hr />
+		<h2 class="normal">Color Pallette</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<div class="swatch gold"></div>
 		<div class="swatch red"></div>
 		<div class="swatch blue"></div>

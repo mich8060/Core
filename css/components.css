@@ -3,9 +3,42 @@ body.shifted article {
 	top:-100%;
 }
 
+/* Comment Component */
+
+.article-comments {
+	margin:40px 0;
+}
+.article-comments form {
+	border:solid 2px #efefef;
+	-webkit-border-radius:3px;
+	   -moz-border-radius:3px;
+			border-radius:3px;
+}
+
+.article-comments form input[type="text"],
+.article-comments form textarea {
+	border:none;
+	margin:0;
+	padding:10px;
+	-webkit-border-radius:0px;
+	   -moz-border-radius:0px;
+			border-radius:0px;
+}
+
+.article-comments form input[type="text"] {
+	border-bottom:solid 2px #efefef;
+}
+
+.article-comments label:last-child {
+	background:#f6f6f6;
+	padding:10px;
+}
+
 /* Hero Component */
 .title {
-	background:#000 url(../img/articles/michael_stevens_web_fonts.jpg) no-repeat top center;
+	background-color:#000;
+	background-repeat:no-repeat;
+	background-position:top center;
 	background-size:1600px 500px;
 	background-attachment:fixed;
 	color:#fff;
