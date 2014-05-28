@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="css/pages.css" />
 </head>
 <body onload="prettyPrint()">
-<div class="container">
+<div class="inner-container">
 	<div class="grid_full">
 		<h1>Grid System</h1>
 	</div>
@@ -364,13 +364,16 @@ $(document).ready(function(){
 		<h2 class="normal">Button</h2>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
-			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin. 
 		</p>
-		<input type="file" id="file" />
-		<label for="file">Select a File</label>
-		<input type="submit" value="Submit" />
-		<input type="button" value="Button" />
-		<input type="reset" />
+
+		<p>
+			<input type="file" id="file" />
+			<label for="file">Select a File</label>
+			<input type="submit" value="Submit" />
+			<input type="button" value="Button" />
+			<input type="reset" />
+		</p>
 		<hr />
 		<h2 class="normal">Tables</h2>
 		<p>

@@ -14,6 +14,7 @@
 <!-- End Google Analytics -->
 <script type="text/javascript" src="js/zepto.min.js"></script>
 <script type="text/javascript" src="js/zepto.ms.min.js"></script>
+<script type="text/javascript" src="js/zepto.fx.min.js"></script>
 <script type="text/javascript" src="js/prettify/prettify.js"></script>
 <script type="text/javascript" src="js/prettify/lang-css.js"></script>
 </body>

@@ -3,7 +3,6 @@
 class Articles_model extends CI_Model {
 	
 	function index($id) {
-		// Decides which article number to serve based on simple url schema 
 		$query = $this->db->query('SELECT articles.id, articles.headline, articles.subheadline, articles.body, articles.length, articles.image, articles.profile_id, articles.date, articles.simple_id, profiles.first, profiles.last, profiles.pic, profiles.title FROM articles JOIN profiles ON articles.profile_id=profiles.id WHERE articles.simple_id = "'.$id.'"');
 		if($query->num_rows() > 0) {
 			foreach($query->result() as $row){
@@ -13,6 +12,10 @@ class Articles_model extends CI_Model {
 			$api = json_decode(file_get_contents($url));
 			return $api[0];
 		}
+	}
+	
+	function list_articles() {
+		
 	}
 	
 	function read() {
