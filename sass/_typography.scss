@@ -166,6 +166,12 @@ html {
 			text-rendering:optimizeLegibility;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 760px) { 
+	html {
+		font-size:16px;
+	}
+}
+
 body {
 	color:#333;
 	font: 400 100%/24px "Proxima-Nova",Helvetica, Arial, Sans-Serif;
@@ -218,6 +224,14 @@ h3 { font-size:24px; line-height:21px; letter-spacing:-0.020em; }
 h4 { font-size:18px; line-height:18px; letter-spacing:-0.020em; }
 h5 { font-size:16px; line-height:18px; letter-spacing:-0.020em; }
 
+@media only screen and (min-width: 0px) and (max-width: 760px) {
+	h1 { font-size:36px; line-height:36px; letter-spacing:-0.010em; }
+	h2 { font-size:24px; line-height:24px; letter-spacing:-0.020em; }
+	h3 { font-size:18px; line-height:18px; letter-spacing:-0.020em; }
+	h4 { font-size:16px; line-height:16px; letter-spacing:-0.020em; }
+	h5 { font-size:14px; line-height:14px; letter-spacing:-0.020em; }
+}
+
 .semi { font-weight:600; }
 .normal { font-weight:300; }
 .light { font-weight:100; }
@@ -248,7 +262,8 @@ a {
 
 p { 
 	hyphenate: auto;
-	hyphenate-lines: 3; 
+	hyphenate-lines: 3;
+	font-size:1rem; 
 	margin:24px 0;
 	letter-spacing:-0.020em;
 	word-spacing: 0.025em;
@@ -276,12 +291,26 @@ p.lead {
 	margin:36px 0;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 760px) { 
+	p.lead {
+		font-size:18px;
+		line-height:24px;
+		margin:24px 0;
+	}
+}
+
 .hint {
 	font-size:16px;
 	line-height:24px;
 	font-weight:300;
 	-webkit-font-smoothing: subpixel-antialiased; 
 			font-smoothing: subpixel-antialiased;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 760px) { 
+	.hint {
+		font-size:12px;
+	}
 }
 
 b, strong, caption, th, thead, dt, legend { 

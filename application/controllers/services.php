@@ -33,6 +33,11 @@ class Services extends CI_Controller {
 				$params = mysql_real_escape_string(strtolower($data[3]));
 				$data = $this->$model->recent();
 				$this->build($data);
+			}elseif(isset($data[3]) && ($data[3] == "offset")){
+				$params = mysql_real_escape_string(strtolower($data[4]));
+				$limit = mysql_real_escape_string(strtolower($data[5]));
+				$data = $this->$model->range($offset, $limit);
+				$this->build($data);
 			}else{
 				show_404('/this_page_was_not_found', FALSE);
 			}

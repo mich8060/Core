@@ -19,6 +19,12 @@
 			box-sizing: border-box;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+	.inner-container { 
+		padding:0 10px;
+	}
+}
+
 .grid_1,
 .grid_2,
 .grid_3,

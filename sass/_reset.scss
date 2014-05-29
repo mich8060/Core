@@ -13,3 +13,5 @@ audio:not([controls]){display:none}
 /* Debug */
 .debug { outline:solid 1px red; }
 .debug-background { background:rgba(255, 0, 0, 0.2) !important; }
+
+pre.debug { background:#fff; }

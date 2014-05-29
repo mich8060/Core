@@ -8,7 +8,8 @@ body.shifted article {
 	background:#fff;
 	box-shadow:0 0 10px rgba(0,0,0,0.2);
 	color:#222;
-	margin:40px 0 80px 0;
+	display:block;
+	margin:20px 0;
 	overflow:hidden;
 }
 
@@ -42,6 +43,27 @@ body.shifted article {
 
 .article-card-bottom {
 	padding:20px 80px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 760px) {
+	
+	.article-card {
+		margin:10px 0 20px 0;
+	}
+	
+	.article-card-title {
+		padding:20px 0;
+	}
+	
+	.article-card-title h2,
+	.article-card-title h4 {
+		border-left:solid 3px #fff;
+		padding:0 20px;
+	}
+	 
+	.article-card-bottom {
+		padding:0 20px;
+	}
 }
 
 .article-card-bottom span {
@@ -88,6 +110,16 @@ body.shifted article {
 	padding:10px;
 }
 
+.article-comment {
+	border-bottom:solid 1px #ededed;
+	margin:10px 0;
+	padding:10px 0;
+}
+
+.article-comment h5 {
+	margin:0 0 0 2px;
+}
+
 /* Progress Component */
 .progress {
 	background:#397ca0;
@@ -100,6 +132,12 @@ body.shifted article {
 /* Social Component */
 .social {
 	float:right;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 760px) { 
+	.social {
+		display:none;
+	}
 }
 .social a {
 	color:#898989;
