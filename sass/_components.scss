@@ -143,7 +143,6 @@ body.shifted article {
 	color:#898989;
 	display:inline-block;
 	padding:28px 4px;
-	outline:solid 1px red;
 }
 
 .social a:nth-child(1) {
@@ -204,7 +203,7 @@ body.shifted article {
 .title {
 	background-color:#000;
 	background-repeat:no-repeat;
-	background-position:top center;
+	background-position:center 80px;
 	background-size:1600px 500px;
 	background-attachment:fixed;
 	color:#fff;
@@ -220,7 +219,7 @@ body.shifted article {
 	display:inline-block;
 	padding:5px 20px;
 	position:absolute;
-	top:20px;
+	bottom:20px;
 	right:20px;
 	-webkit-border-radius:50px;
 	   -moz-border-radius:50px;

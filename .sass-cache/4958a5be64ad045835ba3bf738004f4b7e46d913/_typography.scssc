@@ -1,8 +1,8 @@
 3.2.1 (Media Mark)
-b3dd06ac4d662c1116526fe48492eed4ef7bf0cd
+135470f654151a63b5e3713f37358170b00dcc22
 o:Sass::Tree::RootNode
 :
-@linei:@template"*/* Vertical Rythm */
+@linei:@template"%*/* Vertical Rythm */
 
 
 /* Fonts */
@@ -45,8 +45,8 @@ b3dd06ac4d662c1116526fe48492eed4ef7bf0cd
 }
 
 @font-face {
-	font-family:"Entypo";
-	src: local("Entypo"),
+	font-family:"EntypoSocial";
+	src: local("Entypo-Social"),
 		 url("../fonts/entypo-social.ttf") format("truetype"),
 		 url("../fonts/entypo-social.woff") format("woff"),
 		 url("../fonts/entypo-social.eot"),
@@ -459,10 +459,10 @@ local;i';{ ;	@;0;[o;	;;;i';	@;"Entypoo;	;i(;;;	@;[o;;"ur
 [ ;;;o;;;;	@;"normal;["@font-faceo;
 ;i0;T;	@;
 [	o;;["font-family;i1;	@;i ;
-[ ;;;o;;;;	@;""Entypo"o;;["src;i6;	@;i ;
+[ ;;;o;;;;	@;""EntypoSocial"o;;["src;i6;	@;i ;
 [ ;;;o;	;i2;;;	@;[
 o;;"
-local;i2;{ ;	@;0;[o;	;;;i2;	@;"Entypoo;	;i3;;;	@;[o;;"url;i3;{ ;	@;0;[o;	;;;i3;	@;"../fonts/entypo-social.ttfo;;"format;i3;{ ;	@;0;[o;	;;;i3;	@;"truetypeo;	;i4;;;	@;[o;;"url;i4;{ ;	@;0;[o;	;;;i4;	@;" ../fonts/entypo-social.woffo;;"format;i4;{ ;	@;0;[o;	;;;i4;	@;"	woffo;;"url;i5;{ ;	@;0;[o;	;;;i5;	@;"../fonts/entypo-social.eoto;	;i6;;;	@;[o;;"url;i6;{ ;	@;0;[o;	;;;i6;	@;"&../fonts/entypo-social.svg#entypoo;;"format;i6;{ ;	@;0;[o;	;;;i6;	@;"svgo;;["font-weight;i7;	@;i ;
+local;i2;{ ;	@;0;[o;	;;;i2;	@;"Entypo-Socialo;	;i3;;;	@;[o;;"url;i3;{ ;	@;0;[o;	;;;i3;	@;"../fonts/entypo-social.ttfo;;"format;i3;{ ;	@;0;[o;	;;;i3;	@;"truetypeo;	;i4;;;	@;[o;;"url;i4;{ ;	@;0;[o;	;;;i4;	@;" ../fonts/entypo-social.woffo;;"format;i4;{ ;	@;0;[o;	;;;i4;	@;"	woffo;;"url;i5;{ ;	@;0;[o;	;;;i5;	@;"../fonts/entypo-social.eoto;	;i6;;;	@;[o;;"url;i6;{ ;	@;0;[o;	;;;i6;	@;"&../fonts/entypo-social.svg#entypoo;;"format;i6;{ ;	@;0;[o;	;;;i6;	@;"svgo;;["font-weight;i7;	@;i ;
 [ ;;;o;;;;	@;"normalo;;["font-style;i8;	@;i ;
 [ ;;;o;;;;	@;"normal;["@font-faceo;
 ;i;;T;	@;
