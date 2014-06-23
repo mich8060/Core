@@ -1,13 +1,19 @@
 <header>
 	<div class="progress"></div>
-	<div class="outer-container">
-		<h1><a href="#">Michael <span>Stevens</span></a></h1>
+	<div class="gradiant-bg"></div>
+	<div class="solid-bg"></div>
+	<div class="header-container">
+		<h1>
+			<a href="#">
+				<span class="hamburger"></span>
+				Michael Stevens
+			</a>
+		</h1>
 		<nav>
 			<a href="#">Work</a>
 			<a href="#">About</a>
 			<a href="<? echo base_url(); ?>articles">Articles</a>
 			<a href="#">Discoveries</a>
-			<a href="#">Contact</a>
 		</nav>
 		<div class="social">
 			<a href="#" class="icons-social">&#62235;</a>

@@ -3,7 +3,16 @@
 class Articles_model extends CI_Model {
 	
 	function index($id) {
-		$query = $this->db->query('SELECT articles.id, articles.headline, articles.subheadline, articles.body, articles.length, articles.image, articles.profile_id, articles.date, articles.simple_id, profiles.first, profiles.last, profiles.pic, profiles.title, simpleurl.url FROM articles JOIN profiles ON articles.profile_id=profiles.id JOIN simpleurl ON articles.simple_id=simpleurl.id WHERE articles.simple_id = "'.$id.'"');
+		$query = $this->db->query(
+				'SELECT articles.*, 
+						profiles.first, profiles.last, profiles.pic, 
+						categories.name,
+						simpleurl.url 
+				 FROM articles 
+				 JOIN profiles ON articles.profile_id=profiles.id 
+				 JOIN simpleurl ON articles.simple_id=simpleurl.id 
+				 JOIN categories ON articles.cat_id=categories.id 
+				 WHERE articles.simple_id="'.$id.'"');
 		if($query->num_rows() > 0) {
 			foreach($query->result() as $row){
 				$data[] = $row;
@@ -24,7 +33,17 @@ class Articles_model extends CI_Model {
 	}
 	
 	function read() {
-		$query = $this->db->query('SELECT articles.id, articles.headline, articles.subheadline, articles.body, articles.length, articles.image, articles.profile_id, articles.date, articles.simple_id, profiles.first, profiles.last, profiles.pic, profiles.title, simpleurl.url FROM articles JOIN profiles ON articles.profile_id=profiles.id JOIN simpleurl ON articles.simple_id=simpleurl.id ORDER BY articles.id');
+		$query = $this->db->query(
+				'SELECT articles.*,  
+						profiles.first, profiles.last, profiles.pic, 
+						categories.name,
+						simpleurl.url 
+				 FROM articles 
+				 JOIN profiles ON articles.profile_id=profiles.id 
+				 JOIN simpleurl ON articles.simple_id=simpleurl.id 
+				 JOIN categories ON articles.cat_id=categories.id 
+				 ORDER BY articles.id'
+		);
 		if($query->num_rows() > 0) {
 			foreach($query->result() as $row){
 				$data[] = $row;
@@ -34,7 +53,17 @@ class Articles_model extends CI_Model {
 	}
 	
 	function find($params, $limit) {
-		$query = $this->db->query('SELECT articles.id, articles.headline, articles.subheadline, articles.body, articles.length, articles.image, articles.profile_id, articles.date, articles.simple_id, profiles.first, profiles.last, profiles.pic, profiles.title, simpleurl.url FROM articles JOIN profiles ON articles.profile_id=profiles.id JOIN simpleurl ON articles.simple_id=simpleurl.id WHERE articles.'.$params.' = "'.$limit.'"');
+		$query = $this->db->query(
+				'SELECT articles.*, 
+						profiles.*,
+						categories.name, 
+						simpleurl.url 
+				 FROM articles 
+				 JOIN profiles ON articles.profile_id=profiles.id 
+				 JOIN simpleurl ON articles.simple_id=simpleurl.id 
+				 JOIN categories ON articles.cat_id=categories.id 
+				 WHERE articles.'.$params.' = "'.$limit.'"'
+		);
 		if($query->num_rows() > 0) {
 			foreach($query->result() as $row){
 				$data[] = $row;
@@ -44,7 +73,17 @@ class Articles_model extends CI_Model {
 	}
 	
 	function latest() {
-		$query = $this->db->query('SELECT articles.id, articles.headline, articles.subheadline, articles.body, articles.length, articles.image, articles.profile_id, articles.date, articles.simple_id, profiles.first, profiles.last, profiles.pic, profiles.title, simpleurl.url FROM articles JOIN profiles ON articles.profile_id=profiles.id JOIN simpleurl ON articles.simple_id=simpleurl.id ORDER BY articles.id DESC LIMIT 1');
+		$query = $this->db->query(
+				'SELECT articles.*, 
+						profiles.*,
+						categories.name, 
+						simpleurl.url 
+				 FROM articles 
+				 JOIN profiles ON articles.profile_id=profiles.id 
+				 JOIN simpleurl ON articles.simple_id=simpleurl.id 
+				 JOIN categories ON articles.cat_id=categories.id 
+				 ORDER BY articles.id DESC LIMIT 1'
+		);
 		if($query->num_rows() > 0) {
 			foreach($query->result() as $row){
 				$data[] = $row;
@@ -54,7 +93,16 @@ class Articles_model extends CI_Model {
 	}
 	
 	function recent(){
-		$query = $this->db->query('SELECT articles.id, articles.headline, articles.subheadline, articles.body, articles.length, articles.image, articles.profile_id, articles.date, articles.simple_id, profiles.first, profiles.last, profiles.pic, profiles.title, simpleurl.url FROM articles JOIN profiles ON articles.profile_id=profiles.id JOIN simpleurl ON articles.simple_id=simpleurl.id ORDER BY articles.id DESC LIMIT 5');
+		$query = $this->db->query(
+				'SELECT articles.*, 
+						profiles.*, 
+						categories.name,
+						simpleurl.url 
+				 FROM articles JOIN profiles ON articles.profile_id=profiles.id 
+				 JOIN simpleurl ON articles.simple_id=simpleurl.id 
+				 JOIN categories ON articles.cat_id=categories.id 
+				 ORDER BY articles.id DESC LIMIT 5'
+		);
 		if($query->num_rows() > 0) {
 			foreach($query->result() as $row){
 				$data[] = $row;
@@ -64,7 +112,16 @@ class Articles_model extends CI_Model {
 	}
 	
 	function range($offset, $limit){
-		$query = $this->db->query('SELECT articles.id, articles.headline, articles.subheadline, articles.body, articles.length, articles.image, articles.profile_id, articles.date, articles.simple_id, profiles.first, profiles.last, profiles.pic, profiles.title, simpleurl.url FROM articles JOIN profiles ON articles.profile_id=profiles.id JOIN simpleurl ON articles.simple_id=simpleurl.id ORDER BY articles.id DESC LIMIT 0, 2');
+		$query = $this->db->query(
+				'SELECT articles.*, 
+						profiles.*, 
+						categories.name,
+						simpleurl.url 
+				 FROM articles JOIN profiles ON articles.profile_id=profiles.id 
+				 JOIN simpleurl ON articles.simple_id=simpleurl.id 
+				 JOIN categories ON articles.cat_id=categories.id 
+				 ORDER BY articles.id DESC LIMIT 0, 2'
+		);
 		if($query->num_rows() > 0) {
 			foreach($query->result() as $row){
 				$data[] = $row;

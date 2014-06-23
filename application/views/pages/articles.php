@@ -17,8 +17,7 @@
 				<div class="article-card-bottom">
 					<p>
 						<span class="hint"><? echo $a->date; ?> written by <? echo $a->first." ".$a->last; ?></span>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat 
-						consequat faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin. 
+						<? echo $a->lead; ?>
 					</p>
 				</div>
 			</a>

@@ -177,6 +177,7 @@ body {
 	font: 400 100%/24px "Proxima-Nova",Helvetica, Arial, Sans-Serif;
 	height:100%; 
 	word-wrap: break-word;
+	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased; 
 			font-smoothing: antialiased;
 	-webkit-hyphens: auto; 
@@ -206,19 +207,19 @@ body {
 
 /* Mozilla based browsers */
 ::-moz-selection {
-       background-color: #EEE;
+       background-color: #b4d5fe;
        color: #222;
 }
 
 /* Works in Safari */
 ::selection {
-       background-color: #EEE;
+       background-color: #b4d5fe;
        color: #222;
 }
 
 /* Headlines */
 h1, h2, h3, h4, h5 { font-weight:700; text-indent:-2px; }
-h1 { font-size:48px; line-height:48px; letter-spacing:-0.010em; }
+h1 { font-size:48px; line-height:48px; letter-spacing:-0.020em; }
 h2 { font-size:30px; line-height:30px; letter-spacing:-0.020em; }
 h3 { font-size:24px; line-height:21px; letter-spacing:-0.020em; }
 h4 { font-size:18px; line-height:18px; letter-spacing:-0.020em; }
