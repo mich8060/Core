@@ -1,8 +1,5 @@
-/* Vertical Rythm */
-
-
+@import 'mixins';
 /* Fonts */
-
 @font-face {
 	font-family:"Proxima-Nova";
 	src: local("ProximaNova-Regular"),
@@ -156,7 +153,7 @@
 
 /* Global */
 html {
-	font-size:20px;
+	@include modular_scale("font-size",4);
 	height:100%;
 	-webkit-text-size-adjust:100%; 
 	    -ms-text-size-adjust:100%; 
@@ -168,13 +165,16 @@ html {
 
 @media only screen and (min-width: 0px) and (max-width: 760px) { 
 	html {
-		font-size:16px;
+		@include modular_scale("font-size",4);
 	}
 }
 
 body {
 	color:#333;
-	font: 400 100%/28px "Proxima-Nova",Helvetica, Arial, Sans-Serif;
+	font-family:$primary-font;
+	font-size:100%;
+	font-width:400;
+	@include modular_scale("line-height",7);
 	height:100%; 
 	word-wrap: break-word;
 	-moz-osx-font-smoothing: grayscale;
@@ -206,31 +206,71 @@ body {
 }
 
 /* Mozilla based browsers */
-::-moz-selection {
+p::-moz-selection {
        background-color: #b4d5fe;
        color: #222;
 }
 
 /* Works in Safari */
-::selection {
+p::selection {
        background-color: #b4d5fe;
        color: #222;
 }
 
 /* Headlines */
 h1, h2, h3, h4, h5 { font-weight:700; text-indent:-2px; }
-h1 { font-size:48px; line-height:48px; letter-spacing:-0.020em; }
-h2 { font-size:30px; line-height:30px; letter-spacing:-0.020em; }
-h3 { font-size:24px; line-height:21px; letter-spacing:-0.020em; }
-h4 { font-size:18px; line-height:18px; letter-spacing:-0.020em; }
-h5 { font-size:16px; line-height:18px; letter-spacing:-0.020em; }
+h1 { 
+	@include modular_scale("font-size",12); 
+	@include modular_scale("line-height",9); 
+	letter-spacing:-0.020em;
+}
+h2 { 
+	@include modular_scale("font-size",8); 
+	@include modular_scale("line-height",8);
+	letter-spacing:-0.020em;
+}
+h3 { 
+	@include modular_scale("font-size",6); 
+	@include modular_scale("line-height",5);
+	letter-spacing:-0.020em;
+}
+h4 { 
+	@include modular_scale("font-size",5); 
+	@include modular_scale("line-height",5);
+	letter-spacing:-0.020em;
+}
+h5 { 
+	@include modular_scale("font-size",4); 
+	@include modular_scale("line-height",4);
+	letter-spacing:-0.020em;
+}
 
 @media only screen and (min-width: 0px) and (max-width: 760px) {
-	h1 { font-size:36px; line-height:36px; letter-spacing:-0.010em; }
-	h2 { font-size:24px; line-height:24px; letter-spacing:-0.020em; }
-	h3 { font-size:18px; line-height:18px; letter-spacing:-0.020em; }
-	h4 { font-size:16px; line-height:16px; letter-spacing:-0.020em; }
-	h5 { font-size:14px; line-height:14px; letter-spacing:-0.020em; }
+	h1 { 
+		@include modular_scale("font-size",9); 
+		@include modular_scale("line-height",9);
+		letter-spacing:-0.010em;
+	}
+	h2 { 
+		@include modular_scale("font-size",6); 
+		@include modular_scale("line-height",6);
+		letter-spacing:-0.020em;
+	}
+	h3 {
+		@include modular_scale("font-size",5); 
+		@include modular_scale("line-height",5);
+		letter-spacing:-0.020em;
+	}
+	h4 { 
+		@include modular_scale("font-size",4); 
+		@include modular_scale("line-height",4);
+		letter-spacing:-0.020em;
+	}
+	h5 { 
+		@include modular_scale("font-size",3); 
+		@include modular_scale("line-height",3);
+		letter-spacing:-0.020em;
+	}
 }
 
 .semi { font-weight:600; }

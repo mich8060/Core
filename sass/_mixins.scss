@@ -1,5 +1,6 @@
-$basefont:"16px";
+@import 'variables';
 
-$brand-blue: #397ca0;
-$brand-gold: #B8A45F;
-$brand-red: #e74c3c;
+/* Impliment Modular Scaling - Perfect Fourths */
+@mixin modular_scale($property, $value) {
+	#{$property}: ($value * $scale) + px;
+}
