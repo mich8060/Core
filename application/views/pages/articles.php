@@ -1,25 +1,12 @@
 <div class="articles">
-	<div class="fullscreen"></div>
-	<div class="inner-container">
-		<p class="lead">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat 
-			consequat faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin. 
-		</p>
+	<div>
 		<? foreach($data as $a) {?>
-			<a href="<? echo base_url().$a->url; ?>" class="article-card">
-				<div class="article-card-top">
-					<img src="<? echo $a->image; ?>" alt="" />
-					<div class="article-card-title">
-						<h2 class="semi"><? echo $a->headline; ?></h2>
-						<h4 class="normal"><? echo $a->subheadline; ?></h4>
-					</div>
+			<a href="<? echo base_url().$a->url; ?>" class="article-card" style="background-image:url(<? echo $a->image; ?>);">
+				<div class="title">
+					<h1><? echo $a->headline; ?></h1>
+					<h3 class="normal"><? echo $a->subheadline; ?></h3>
 				</div>
-				<div class="article-card-bottom">
-					<p>
-						<span class="hint"><? echo $a->date; ?> written by <? echo $a->first." ".$a->last; ?></span>
-						<? echo $a->lead; ?>
-					</p>
-				</div>
+				<div class="shadow"></div>
 			</a>
 		<? } ?>
 		<div class="article-pagination">

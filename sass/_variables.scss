@@ -1,6 +1,33 @@
-$scale: 4;
-$primary-font:"Proxima-Nova",Helvetica, Arial, Sans-Serif;
+@import 'functions';
 
-$brand-blue: #397ca0;
-$brand-gold: #B8A45F;
-$brand-red: #e74c3c;
+$settings: (
+	scale:		4,
+	base_url:	"localhost:8888/core/"
+);
+
+$fonts: (
+	base: 		settings(scale) * 4,
+	primary:	""Proxima-Nova",Helvetica, Arial, Sans-Serif",
+	secondary:	""Roboto Slab", serif"
+);
+
+$colors: (
+	white:	#FFFFFF,
+	black:	#000000,
+	blue:	#397CA0,
+	gold:	#B8A45F,
+	red:	#E74C3C,
+	pink:	#CC4B7D
+);
+
+$weight: (
+	extralight: 100,
+	light: 200,
+	book: 300,
+	regular: 400,
+	medium: 500,
+	semibold:600,
+	bold:700,
+	black:800,
+	extrabold:900
+);

@@ -13,8 +13,12 @@
 </head>
 <body onload="prettyPrint()">
 <div class="inner-container">
-	<div class="grid_full">
-		<h1>Grid System</h1>
+	<div class="grid_1">
+		<h2 class="normal">Grid System</h2>
+		<p class="hint">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 	</div>
 	<div class="grid_1 debug">Full Grid</div>
 	<div class="grid_2 debug">Half Grid</div>
@@ -42,41 +46,48 @@
 	</div>
 	<div class="clear"></div>
 	<div class="grid_1">
-		<h1>Typography</h1>
-	</div>
-	<div class="grid_2">
+		<hr />
+		<h2 class="normal">Bold Headlines - (Default)</h2>
+		<p class="hint">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<h1>Headline One</h1>
 		<h2>Headline Two</h2>
 		<h3>Headline Three</h3>
 		<h4>Headline Fourth</h4>
 		<h5>Headline Five</h5>
-	</div>
-	<div class="grid_2">
+		<hr />
+		<h2 class="normal">Normal Headlines</h2>
+		<p class="hint">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
+		<h1 class="normal">Headline One</h1>
+		<h2 class="normal">Headline Two</h2>
+		<h3 class="normal">Headline Three</h3>
+		<h4 class="normal">Headline Fourth</h4>
+		<h5 class="normal">Headline Five</h5>
+		<hr />
+		<h2 class="normal">Light Headlines</h2>
+		<p class="hint">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<h1 class="light">Headline One</h1>
 		<h2 class="light">Headline Two</h2>
 		<h3 class="light">Headline Three</h3>
 		<h4 class="light">Headline Fourth</h4>
 		<h5 class="light">Headline Five</h5>
-	</div>
-	<div class="clear"></div>
-	<div class="grid_1">
-		<h5>Lead Paragraph</h5>
+		<hr />
+		<h2 class="normal">Lead Paragraph</h2>
 		<p class="lead">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
 			justo quis erat consequat faucibus eu at sapien. Ut sollicitudin 
-			erat non cursus sollicitudin. Donec ultrices tortor quis dolor 
-			condimentum, sed hendrerit elit suscipit. Fusce in enim eget neque 
-			rutrum placerat. Aenean a nibh eu nunc pulvinar scelerisque. 
-			Morbi mollis dolor non urna pulvinar sollicitudin. Donec nec 
-			bibendum augue. Sed molestie, felis nec faucibus fermentum, ipsum 
-			libero auctor turpis, sed dictum lorem orci sit amet justo. 
-			Vivamus sit amet ornare turpis, vitae venenatis magna. Pellentesque 
-			eu sollicitudin turpis, eget porta nunc. Nam est justo, mattis id 
-			nibh non, feugiat blandit lectus.
+			erat non cursus sollicitudin.
 		</p>
-	</div>
-	<div class="grid_1">
-		<h5>Regular Paragraph</h5>
+		<hr />
+		<h2 class="normal">Regular Paragraph</h2>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
 			justo quis erat consequat faucibus eu at sapien. Ut sollicitudin 
@@ -90,9 +101,8 @@
 			eu sollicitudin turpis, eget porta nunc. Nam est justo, mattis id 
 			nibh non, feugiat blandit lectus.
 		</p>
-	</div>
-	<div class="grid_1">
-		<h5>Hint Paragraph</h5>
+		<hr />
+		<h2 class="normal">Hint Paragraph</h2>
 		<p class="hint">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
 			justo quis erat consequat faucibus eu at sapien. Ut sollicitudin 
@@ -106,12 +116,12 @@
 			eu sollicitudin turpis, eget porta nunc. Nam est justo, mattis id 
 			nibh non, feugiat blandit lectus.
 		</p>
-	</div>
-	<div class="grid_1">
-		<h1>List Types</h1>
-	</div>
-	<div class="grid_2">
-		<h5>Ordered List</h5>
+		<hr />
+		<h2 class="normal">Ordered List</h2>
+		<p class="hint">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<ol>
 			<li>List item</li>
 			<li>List item</li>
@@ -129,9 +139,12 @@
 				</ol>
 			</li>
 		</ol>
-	</div>
-	<div class="grid_2">
-		<h5>Unordered List</h5>
+		<hr />
+		<h2 class="normal">Unordered List</h2>
+		<p class="hint">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<ul>
 			<li>List item</li>
 			<li>List item</li>
@@ -149,9 +162,12 @@
 				</ul>
 			</li>
 		</ul>
-	</div>
-	<div class="grid_2">
-		<h5>Definition List</h5>
+		<hr />
+		<h2 class="normal">Definition</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<dl>
 			<dt>Definition list title</dt>
 			<dd>Definition list data</dd>
@@ -160,24 +176,12 @@
 			<dt>Definition list title</dt>
 			<dd>Definition list data</dd>
 		</dl>
-	</div>
-	<div class="grid_2">
-		<h5>Definition List</h5>
-		<dl class="spec">
-			<dt>Definition list title</dt>
-			<dd>Definition list data</dd>
-			<dt>Definition list title</dt>
-			<dd>Definition list data</dd>
-			<dt>Definition list title</dt>
-			<dd>Definition list data</dd>
-		</dl>
-	</div>
-	<div class="clear"></div>
-	<div class="grid_1">
-		<h1>Other Markup</h1>
-	</div>
-	<div class="grid_1">
-		<h5>CSS</h5>
+		<hr />
+		<h2 class="normal">Markup</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 <pre class="prettyprint linenums lang-css">
 pre {
 	background: #222;
@@ -193,31 +197,12 @@ pre {
 	word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 </pre>
-<h5>HTML</h5>
-<pre class="prettyprint linenums lang-html">
-&lt;!DOCTYPE HTML&gt;
-&lt;html lang="en-US"&gt;
-&lt;head&gt;
-&lt;title&gt;&lt;/title&gt;
-&lt;meta charset="UTF-8"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
-<h5>Javascript</h5>
-<pre class="prettyprint linenums lang-javascript">
-$(document).ready(function(){
-	alert('Ready!');
-});
-</pre>
-<hr />
-<h2 class="normal">Text Level Semantics</h2>
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
-	faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
-</p>
+		<hr />
+		<h2 class="normal">Text Level Semantics</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 		<address>Address</address><br />
 		<table>
 			<thead>
@@ -239,22 +224,64 @@ $(document).ready(function(){
 					<td><code>&lt;sub&gt;</code></td>
 					<td><sub>Subscript</sub></td>
 				</tr>
+				<tr>
+					<td><code>&lt;ins&gt;</code></td>	
+					<td><ins>ins</ins></td>
+				</tr>
+				<tr>
+					<td><code>&lt;del&gt;</code></td>	
+					<td><del>del</del></td>
+				</tr>
+				<tr>
+					<td><code>&lt;code&gt;</code></td>	
+					<td><code>code</code></td>
+				</tr>
+				<tr>
+					<td><code>&lt;kbd&gt;</code></td>	
+					<td><kbd>kbd</kbd></td>
+				</tr>
+				<tr>
+					<td><code>&lt;samp&gt;</code></td>	
+					<td><samp>samp</samp></td>
+				</tr>
+				<tr>
+					<td><code>&lt;tt&gt;</code></td>	
+					<td><tt>tt</tt></td>
+				</tr>
+				<tr>
+					<td><code>&lt;var&gt;</code></td>	
+					<td><var>var</var></td>
+				</tr>
+				<tr>
+					<td><code>&lt;cite&gt;</code></td>	
+					<td><cite>cite</cite></td>
+				</tr>
+				<tr>
+					<td><code>&lt;dfn&gt;</code></td>	
+					<td><dfn>dfn</dfn></td>
+				</tr>
+				<tr>
+					<td><code>&lt;em&gt;</code></td>	
+					<td><em>em</em></td>
+				</tr>
+				<tr>
+					<td><code>&lt;i&gt;</code></td>	
+					<td><i>i</i></td>
+				</tr>
+				<tr>
+					<td><code>&lt;b&gt;</code></td>	
+					<td><b>b</b></td>
+				</tr>
+				<tr>
+					<td><code>&lt;strong&gt;</code></td>	
+					<td><strong>strong</strong></td>
+				</tr>
+				<tr>
+					<td><code>&lt;legend&gt;</code></td>	
+					<td><legend>legend</legend></td>
+				</tr>
 			</tbody>
 		</table>
-		<ins>ins</ins><br />
-		<del>del</del><br />
-		<code>code</code><br />
-		<kbd>kbd</kbd><br />
-		<samp>samp</samp><br />
-		<tt>tt</tt><br />
-		<var>var</var><br />
-		<cite>cite</cite><br />
-		<dfn>dfn</dfn><br />
-		<em>em</em><br />
-		<i>i</i><br />
-		<b>b</b><br />
-		<strong>strong</strong><br />
-		<legend>legend</legend>
 	</div>
 	<div class="clear"></div>
 	<div class="grid_1">
@@ -264,7 +291,13 @@ $(document).ready(function(){
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
 			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
 		</p>
-		<blockquote>Blockquote</blockquote>
+		<blockquote>
+			Ut nonummy habent soluta claritas veniam. Typi nunc soluta hendrerit mutationem sollemnes. 
+			Quis lius dolore et insitam vel. Aliquip consequat futurum claram ut mazim. Facilisi accumsan 
+			dolore ii imperdiet consequat. Claritatem aliquip quod putamus vulputate iusto. Doming minim 
+			typi zzril lius usus. In clari mutationem autem non sit. Qui augue mirum dynamicus gothica ut. 
+			Demonstraverunt processus soluta sequitur autem demonstraverunt
+		</blockquote>
 		<hr />
 		<h2 class="normal">Breakpoints</h2>
 		<p>

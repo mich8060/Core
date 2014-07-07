@@ -2,5 +2,72 @@
 
 /* Impliment Modular Scaling - Perfect Fourths */
 @mixin modular_scale($property, $value) {
-	#{$property}: ($value * $scale) + px;
+	@if type-of($value) == 'number' {
+		#{$property}: ($value * settings(scale)) + px;
+		#{$property}: ($value * settings(scale)) / fonts(base) + rem;	
+	}
+	@else {
+		$rem_values:();
+		$values:();
+		@each $v in $value {
+			@if $v == 0 { 
+				$rem_values: append($rem_values, (($v * settings(scale)) / fonts(base)));
+				$values: append($values, ($v * settings(scale))); 
+			}
+			@else {
+				$rem_values: append($rem_values, (($v * settings(scale)) / fonts(base)) + rem);
+				$values: append($values, ($v * settings(scale)) + px);
+			}
+		}
+		#{$property}: $values;
+		#{$property}: $rem_values;
+	}
+}
+
+
+@mixin breakpoint($point) {
+  	@if $point == mobile {
+    	@media only screen and (min-width: 0px) and (max-width: 760px) { @content; }
+  	}
+  	@else if $point == tablet {
+		@media only screen and (min-width: 761px) and (max-width: 999px) { @content; }
+  	}
+}
+
+@mixin image-2x($image, $width, $height) {
+	@media (min--moz-device-pixel-ratio: 1.3),
+		(-o-min-device-pixel-ratio: 2.6/2),
+   		(-webkit-min-device-pixel-ratio: 1.3),
+     	(min-device-pixel-ratio: 1.3),
+     	(min-resolution: 1.3dppx) {
+    	background-image: url($image);
+    	background-size: $width $height;
+		/*@include image-2x("logo2x.png", 100px, 25px);*/
+  	}
+}
+
+/* Cross Browser Inline-Block */
+@mixin inline-block {
+  	display: inline-block; /* For normal, healthy browsers */
+ 
+  	* html & { /* for IE6 */
+    	display: inline;
+  	}
+ 
+  	*+html & { /* for IE7 */
+    	display: inline;
+  	}
+}
+
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+  	white-space: nowrap;
+	/*@include text-truncate;*/
+}
+
+@mixin prefix($property, $value) {
+	-webkit-#{$property}: $value; 
+	   -moz-#{$property}: $value;
+			#{$property}: $value;
 }

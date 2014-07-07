@@ -1,0 +1,27 @@
+@function settings($key) {
+	@if not map-has-key($settings, $key) {
+    	@warn "Key `#{$key}` not found in $settings map.";
+  	}	
+  	@return map-get($settings, $key);
+}
+
+@function fonts($key) {
+	@if not map-has-key($fonts, $key) {
+    	@warn "Key `#{$key}` not found in $fonts map.";
+  	}	
+  	@return map-get($fonts, $key);
+}
+
+@function colors($key) {
+	@if not map-has-key($colors, $key) {
+    	@warn "Key `#{$key}` not found in $colors map.";
+  	}	
+  	@return map-get($colors, $key);
+}
+
+@function weight($key) {
+	@if not map-has-key($weight, $key) {
+    	@warn "Key `#{$key}` not found in $weight map.";
+  	}	
+  	@return map-get($weight, $key);
+}

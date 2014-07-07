@@ -1,15 +1,16 @@
 <div class="article-detail">
-	<section class="article-head" style="background-image:url(<? echo $data[0]->image; ?>)">
-		<div class="timer hint"><? echo $data[0]->length; ?></div>
+
+	<section class="article-head" style="background-image:url()">
 		<div class="outer-container">
+			<img src="<? echo $data[0]->image; ?>" alt="" />
+		</div>
+		<div class="timer hint"><? echo $data[0]->length; ?></div>
+		<div class="inner-container">
 			<h2 class="normal"><? echo $data[0]->subheadline; ?></h2>
 			<h1><? echo $data[0]->headline; ?></h1>
-			<h4 class="normal">By <strong><a href="#"><? echo $data[0]->first." ".$data[0]->last; ?></a></strong> &ndash; Posted in <strong><a href="#"><? echo $data[0]->name; ?></a></strong> on <strong><a href="#"><? echo date ("M d, Y",strtotime($data[0]->date)); ?></a></strong></h4>
-			<div class="inner-container">
-				<p class="lead">
-					 <? echo $data[0]->lead; ?>
-				</p>
-			</div>
+			<p class="lead">
+				 <? echo $data[0]->lead; ?>
+			</p>
 		</div>
 	</section>
 	<div class="article-body">

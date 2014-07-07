@@ -1,0 +1,10 @@
+sudo gem uninstall sass
+sudo gem uninstall compass
+xcode-select --install
+\curl -sSL https://get.rvm.io | bash -s stable
+Restart Terminal
+rvm requirements
+run rvm install 2.1
+rvm install ruby-1.9.3-p448
+sudo gem install sass --pre
+sudo gem install compass --pre

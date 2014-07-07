@@ -1,4 +1,5 @@
 @import 'mixins';
+
 /* Fonts */
 @font-face {
 	font-family:"Proxima-Nova";
@@ -170,38 +171,27 @@ html {
 }
 
 body {
-	color:#333;
-	font-family:$primary-font;
+	font-family:fonts(primary);
 	font-size:100%;
-	font-width:400;
+	font-weight:weight(book);
 	@include modular_scale("line-height",7);
-	height:100%; 
 	word-wrap: break-word;
 	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased; 
-			font-smoothing: antialiased;
-	-webkit-hyphens: auto; 
-	   -moz-hyphens: auto; 
-	    -ms-hyphens: auto; 
-			hyphens: auto; 
+	@include prefix("font-smoothing", "antialiased");
+	@include prefix("hyphens", "auto");
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1000px) { 
 	body {	
 		-webkit-touch-callout: none;  
-		  -webkit-user-select: none;  
-		   -khtml-user-select: none;  
-		     -moz-user-select: none;  
-		      -ms-user-select: none;  
-		          user-select: none;
+		@include prefix("user-select", "none");
 	}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     /* Retina-specific body weights & smoothing */
 	body {
-		-webkit-font-smoothing: antialiased; 
-				font-smoothing: antialiased;
+		@include prefix("font-smoothing", "antialiased");
 	}
 }
 
@@ -273,18 +263,16 @@ h5 {
 	}
 }
 
-.semi { font-weight:600; }
-.normal { font-weight:300; }
-.light { font-weight:100; }
+.semi { font-weight:weight(semibold); }
+.normal { font-weight:weight(book); }
+.light { font-weight:weight(extralight); }
 
 /* Hyperlinks */
 
 a { 
 	color: #397ca0; 
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
- 	-webkit-transition: color 0.3s ease;
-	   -moz-transition: color 0.3s ease;	
-			transition: color 0.3s ease;
+	@include prefix("transition", "color 0.3s ease");
 }
 	a:hover { color: #397CA0; }
 	
@@ -293,9 +281,9 @@ a {
 		background-size:10px 10px;
 		content: "";
 		display:inline-block;
-		width:10px;
-		height:10px;
-		margin:0 3px;
+		@include modular_scale("height", 3);
+		@include modular_scale("margin", 0 1);
+		@include modular_scale("width", 3);
 	}
 
 
@@ -304,8 +292,9 @@ a {
 p { 
 	hyphenate: auto;
 	hyphenate-lines: 3;
-	font-size:1rem; 
-	margin:24px 0;
+	@include modular_scale("font-size",5);
+	@include modular_scale("line-height",7);
+	@include modular_scale("margin", 6 0);
 	letter-spacing:-0.020em;
 	word-spacing: 0.025em;
 	word-wrap:normal;
@@ -314,8 +303,8 @@ p {
 p:before, p:after { 
 	content: ""; 
 	display: block; 
-	height: 0px; 
-	margin: 0px;
+	@include modular_scale("height", 0);
+	@include modular_scale("margin", 0);
 }
 
 p a {
@@ -325,37 +314,38 @@ p a {
 }
 
 p.lead {
-	font-size:30px;
-	font-weight:200;
+	@include modular_scale("margin", 0);
+	@include modular_scale("font-size",7);
+	font-weight:weight(extralight);
 	letter-spacing:-0.020em;
-	line-height:36px;
-	margin:36px 0;
+	@include modular_scale("line-height",9);
+	@include modular_scale("margin", 9 0);
 }
 
 @media only screen and (min-width: 0px) and (max-width: 760px) { 
 	p.lead {
-		font-size:18px;
-		line-height:24px;
-		margin:24px 0;
+		@include modular_scale("font-size",5);
+		@include modular_scale("line-height",6);
+		@include modular_scale("margin", 6 0);
 	}
 }
 
 .hint {
-	font-size:16px;
-	line-height:24px;
-	font-weight:300;
+	@include modular_scale("font-size",4);
+	@include modular_scale("line-height",6);
+	font-weight:weight(book);
 	-webkit-font-smoothing: subpixel-antialiased; 
 			font-smoothing: subpixel-antialiased;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 760px) { 
 	.hint {
-		font-size:12px;
+		@include modular_scale("font-size",3);
 	}
 }
 
 b, strong, caption, th, thead, dt, legend { 
-	font-weight:700;
+	font-weight:weight(bold);
 }
 
 cite, dfn, em, i { 
@@ -364,8 +354,8 @@ cite, dfn, em, i {
 
 code, kbd, samp, pre, tt, var { 
 	font-family:mono-space, monospace;
-	font-size:16px;
-	line-height:24px;
+	@include modular_scale("font-size",4);
+	@include modular_scale("line-height",6);
 }
 
 del { 
@@ -397,41 +387,34 @@ code {
 	background:#f6f6f6;
 	border:solid 1px #ededed;
 	color:#B8A45F;
-	display:inline-block; 
-	font-size:14px;
-	line-height:16px;
-	margin:-5px 0;
-	padding:0 3px;
+	display:inline-block;
+	@include modular_scale("font-size",3);
+	@include modular_scale("line-height",4); 
+	@include modular_scale("margin", -1 0);
+	@include modular_scale("padding", 0 1);
 	-webkit-border-radius:3px;
 	   -moz-border-radius:3px;
 			border-radius:3px;
 }
 
 blockquote { 
+	border-left: 3px solid colors(gold);
 	color:#222;
+	font-family:fonts(secondary);
 	font-style:italic;
-	font-size:20px;
-	line-height:24px;
-	margin:30px 0;
-	padding:2px 0 2px 2.0em;
+	font-weight:weight(extralight);
+	letter-spacing:0px;
+	@include modular_scale("font-size",4);
+	@include modular_scale("line-height",8); 
+	@include modular_scale("margin", 7 0);
+	@include modular_scale("padding", 1 0 2 5);
 	position:relative;
 	quotes: "\201C" "\201D";
 }
 
-blockquote:before { 
-	color:#222;
-	content: open-quote; 
-	font: italic 100%/60% 'Playfair Display', Georgia, Serif;
-	font-size:72px;
-	font-style:normal;
-	left:0px;
-	position:absolute;
-	width:0px;
-} 
-
 address {
-	line-height:20px;
-	margin:20px 0;
+	@include modular_scale("line-height",5);
+	@include modular_scale("margin", 5);
 }
 address a,
 address span { display:block; }
@@ -439,13 +422,13 @@ address span { display:block; }
 /* Lists */
 /* Add classes so that this does not automatically apply, since lists are sometimes used for layout */
 ul, ol { 
-	margin:20px 0 20px 1em;
+	@include modular_scale("margin", 5 0 5 4);
 }
 
 ol ol,
 ul ul,
 ol ul,
-ul ol { margin: 0 0 0 1.3em; }
+ul ol { @include modular_scale("margin", 0 0 0 5); }
 
 ul li {
 	list-style: disc outside;
@@ -455,6 +438,6 @@ ol li {
 	list-style: decimal outside;
 }
 
-dt, dl { line-height:18px; }
-dt { margin-top:10px; }
-dl { margin-bottom:10px; }
+dt, dl { @include modular_scale("line-height",5); }
+dt { @include modular_scale("margin", 3 0 0 0); }
+dl { @include modular_scale("margin", 0 0 3 0); }
