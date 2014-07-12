@@ -1,17 +1,14 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-<title></title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/grid.css" />
-<link rel="stylesheet" href="css/typography.css" />
-<link rel="stylesheet" href="css/elements.css" />
-<link rel="stylesheet" href="css/components.css" />
-<link rel="stylesheet" href="css/sections.css" />
-<link rel="stylesheet" href="css/pages.css" />
-</head>
-<body onload="prettyPrint()">
+
+	<div class="page-title">
+		<div class="inner-container">
+			<h2 class="light">Consistently Beautiful &amp; Simple</h2>
+			<h1>Human Interface Guidelines</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat faucibus eu at 
+				sapien. Ut sollicitudin erat non cursus sollicitudin. Donec ultrices tortor dolor condimentum.
+			</p>
+		</div>
+	</div>
 <div class="inner-container">
 	<div class="grid_1">
 		<h2 class="normal">Grid System</h2>
@@ -469,8 +466,3 @@ pre {
 		<p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 	</div>
 </div>
-<script type="text/javascript" src="js/prettify/prettify.js"></script>
-<script type="text/javascript" src="js/prettify/lang-css.js"></script>
-<script type="text/javascript" src="js/prettify/lang-html.js"></script>
-</body>
-</html>

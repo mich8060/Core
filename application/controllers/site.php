@@ -26,6 +26,12 @@ class Site extends CI_Controller {
 			$data['mobile'] = 'Desktop';
 		}
 		
+		
+		// Declare API Key
+		if(!$obj->premissions){
+			$_SERVER['API_KEY'] = $this->config->item('api_key');
+		}
+		
 		// Verify if a model is associated with this item.
 		if($obj->model) {
 			$models = explode(" ", $obj->function);

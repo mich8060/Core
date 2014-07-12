@@ -34,8 +34,6 @@
 				<label for="comment">
 					<textarea name="comment" id="comment" placeholder="Question/Comments"></textarea>
 				</label>
-				<input type="hidden" name="data" value="<? echo base_url(); ?>services/comments/ref_id/<? echo $data[0]->id; ?>" />
-				<input type="hidden" name="token" />
 				<input type="hidden" name="type" value="articles" />
 				<input type="hidden" name="ref" value="<? echo $data[0]->id; ?>" />
 				<label for="">

@@ -11,6 +11,10 @@ class Forms extends CI_Controller {
 				$this->load->model("comments_model");
 				$this->comments_model->add($obj);
 		        break;
+			case "articles":
+				$obj = $this->clean($_POST);
+				$this->load->model("articles_model");
+				$this->articles_model->add($obj);
 		    default:
 				show_404('/this_page_was_not_found', FALSE);
 				break;

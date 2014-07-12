@@ -20,7 +20,8 @@ class Comments_model extends CI_Model {
 	}
 	
 	function add($obj) {
-		$values = '"'.$obj['name'].'", "'.$obj['comment'].'", "'.$obj['type'].'", "'.$obj['ref'].'"';
+		$values = implode("', '", $obj);
+		$values = "'".$values."'";
 		$this->db->query('INSERT INTO comments (name, comment, type, ref_id) VALUES ('.$values.')');
 	}
 	
