@@ -9,7 +9,7 @@
 	     url("fonts/proximanova-regular-webfont.otf") format("opentype"),
 	     url("fonts/proximanova-regular-webfont.ttf") format("truetype"),
 	     url("fonts/proximanova-regular-webfont.woff") format("woff"),
-	     url("fonts/proximanova-regular-webfont.svg#iefix") format("svg");
+	     url("fonts/proximanova-regular-webfont.svg#proximanova-regular-webfont") format("svg");
 	font-weight:400;
 	font-style:normal;
 }
@@ -215,8 +215,8 @@ h1 {
 	letter-spacing:-0.020em;
 }
 h2 { 
-	@include modular_scale("font-size",8); 
-	@include modular_scale("line-height",8);
+	@include modular_scale("font-size",7); 
+	@include modular_scale("line-height",6);
 	letter-spacing:-0.020em;
 }
 h3 { 
@@ -272,7 +272,7 @@ h5 {
 a { 
 	color: #397ca0; 
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
-	@include prefix("transition", "color 0.3s ease");
+	@include prefix("transition", "border, color 0.3s ease");
 }
 	a:hover { color: #397CA0; }
 	

@@ -3,18 +3,20 @@
 
 /* Article Card Component */
 .article-card {
-	background-size:cover;
-	background-position:center center;
-	background-repeat:none;
-	border-bottom:solid 1px #333;
+	background-color:#000;
+	background-size:180% auto;
+	background-position:center top;
+	background-repeat:no-repeat;
+	outline:solid 1px #333;
 	box-shadow:0 0 10px rgba(0,0,0,0.2);
 	color:#fff;
 	display:block;
-	@include modular_scale("height",75);
+	min-height:340px;
 	position:relative;
 	
 	&:hover {
 		color:#fff;
+		outline:solid 1px #fff;
 		
 		.shadow {
 			background:rgba(0,0,0,0);
@@ -31,12 +33,13 @@
 	}
 	
 	.title {
-		bottom:0px;
-		left:0px;
-		@include modular_scale("padding",10);
-		position:absolute;
-		right:0px;
+		@include modular_scale("padding",60 4 8 4);
+		position:relative;
 		z-index:9;
+		
+		h5 {
+			@include modular_scale("margin",0 0 1 0);	
+		}
 	}
 }
 
@@ -168,15 +171,17 @@
 }
 
 .page-title {
-	background:colors(black);
+	background-color:colors(black);
+	background-size:cover;
+	background-attachment:fixed;
 	color:colors(white);
-	@include modular_scale("margin", 0 0 10 0);
-	@include modular_scale("padding", 30 0 5 0);
+	@include modular_scale("margin", 0 0 20 0);
+	@include modular_scale("padding", 30 0 8 0);
 }
 
 /* Full Screen Background */
 .fullscreen {
-	background:#fff url(../img/layout/michael_stevens_articles_bg.jpg) no-repeat center top;
+	background:#000;
 	bottom:0px;
 	left:0px;
 	position:fixed;
@@ -219,14 +224,13 @@
 	
 	.article-head {
 		background-color:#000;
-		background-attachment:fixed;
 		background-repeat:no-repeat;
 		background-size:1600px auto;
 		background-position:top center;
 		color:#fff;
 		@include modular_scale("margin",0 0 10 0);
 		overflow:hidden;
-		@include modular_scale("padding",0 0 5 0);
+		@include modular_scale("padding",130 0 5 0);
 		position:relative;
 		width:100%;
 		

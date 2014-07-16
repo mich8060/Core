@@ -1,14 +1,9 @@
-
-	<div class="page-title">
-		<div class="inner-container">
-			<h2 class="light">Consistently Beautiful &amp; Simple</h2>
-			<h1>Human Interface Guidelines</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat faucibus eu at 
-				sapien. Ut sollicitudin erat non cursus sollicitudin. Donec ultrices tortor dolor condimentum.
-			</p>
-		</div>
+<div class="page-title" style="background-image:url(http://localhost:8888/core/img/articles/michael_stevens_human_interface_guidlines.jpg);">
+	<div class="inner-container">
+		<h2 class="light">Consistently Beautiful &amp; Simple</h2>
+		<h1>Human Interface Guidelines</h1>
 	</div>
+</div>
 <div class="inner-container">
 	<div class="grid_1">
 		<h2 class="normal">Grid System</h2>

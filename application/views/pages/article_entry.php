@@ -1,8 +1,8 @@
 <div class="article-detail">
 
-	<section class="article-head" style="background-image:url()">
+	<section class="article-head" style="background-image:url(<? echo $data[0]->image; ?>)">
 		<div class="outer-container">
-			<img src="<? echo $data[0]->image; ?>" alt="" />
+			<img src="" alt="" />
 		</div>
 		<div class="timer hint"><? echo $data[0]->length; ?></div>
 		<div class="inner-container">
