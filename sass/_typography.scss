@@ -211,7 +211,7 @@ p::selection {
 h1, h2, h3, h4, h5 { font-weight:700; text-indent:-2px; }
 h1 { 
 	@include modular_scale("font-size",12); 
-	@include modular_scale("line-height",9); 
+	@include modular_scale("line-height",10); 
 	letter-spacing:-0.020em;
 }
 h2 { 
@@ -236,31 +236,7 @@ h5 {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 760px) {
-	h1 { 
-		@include modular_scale("font-size",9); 
-		@include modular_scale("line-height",9);
-		letter-spacing:-0.010em;
-	}
-	h2 { 
-		@include modular_scale("font-size",6); 
-		@include modular_scale("line-height",6);
-		letter-spacing:-0.020em;
-	}
-	h3 {
-		@include modular_scale("font-size",5); 
-		@include modular_scale("line-height",5);
-		letter-spacing:-0.020em;
-	}
-	h4 { 
-		@include modular_scale("font-size",4); 
-		@include modular_scale("line-height",4);
-		letter-spacing:-0.020em;
-	}
-	h5 { 
-		@include modular_scale("font-size",3); 
-		@include modular_scale("line-height",3);
-		letter-spacing:-0.020em;
-	}
+
 }
 
 .semi { font-weight:weight(semibold); }
@@ -276,7 +252,7 @@ a {
 }
 	a:hover { color: #397CA0; }
 	
-	a[href^="http://"]:not([href*="localhost:8888"])::after {
+	p a[href^="http://"]:not([href*="localhost:8888"])::after {
 		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNrs2OEJwjAQBeBTHMBRHMFRsllGqRt0lI5QIyiIaGrTu3fp8R5cfxWSj6O5UBG/5FKzYrkmR4FoYiQKRqJgJApGomC6y7nUtHfIAzG2dORQHlflzdw2IIZSl9aFZ/GfsM2deF/XG6KBcIesQUy9QtYgxuf7uTdIC2JpzsDP5C2IGgYK0UD8wsAgmohvGAjEAvGJMYdYIl4ZrCEIRPWKsjuEFQSOsIC4ICwgLggLSPJAWH0jCY2wPLUSEmE9RxIKgZjsCYHwuMav3ctfP0eOEiSEEEIIIYQQQgghhBCymFPlOs2OEEJIIMhdgAEADbswz/ZOWYAAAAAASUVORK5CYII=);
 		background-size:10px 10px;
 		content: "";

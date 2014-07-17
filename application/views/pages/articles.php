@@ -1,11 +1,14 @@
 <div class="articles">
+	<div class="fullscreen"><img src="<? echo base_url(); ?>img/layout/03.jpg" alt="" /></div>
 	<div class="page-title" style="background:transparent;">
 		<div class="outer-container">
-			<h2 class="light">Make a dent in the universe</h2>
-			<h1>The Latest Articles</h1>
-			<p class="lead">
-				My name is Davey Heuser and I have a great passion for solving problems by designing user interfaces that are both easy to use and visually appealing. That is what I hope to do the rest of my life.
-			</p>
+			<div class="grid_1">
+				<h2 class="light">Make a dent in the universe</h2>
+				<h1>The Latest Articles</h1>
+				<p class="lead">
+					My name is Davey Heuser and I have a great passion for solving problems by designing user interfaces that are both easy to use and visually appealing. That is what I hope to do the rest of my life.
+				</p>
+			</div>
 		</div>
 	</div>
 	<div class="outer-container">

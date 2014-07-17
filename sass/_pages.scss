@@ -1,4 +1,15 @@
+.about {
+	color:#fff;
+	@include modular_scale("padding",90 0);
+}
 .articles {
-	background:#000 url(../img/layout/articles_bg.jpg) no-repeat top center;
 	background-size:100% auto;
+}
+.contact {
+	color:#fff;
+	@include modular_scale("padding",40 0 90 0);
+}
+.discoveries {
+	color:#fff;
+	@include modular_scale("padding",40 0 90 0);
 }

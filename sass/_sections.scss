@@ -3,7 +3,7 @@ html {
 }
 
 body { 
-	background:#fff;
+	background:#f5f5f5;
 	color:#222;
 	height:100%;
 	padding:0;
@@ -26,26 +26,26 @@ article {
 
 header {
 	left:0px;
-	height:60px;
+	height:84px;
 	position:absolute;
 	right:0px;
 	top:0px;
 	z-index:9999;
+	transition:all 0.3s ease;
+	
+	&:hover {
+		background:rgba(0,0,0,0.2);
+	}
 	
 	h1 {
 		float:left;
 		font-weight:weight(semibold);
-		letter-spacing:-0.009em;
+		letter-spacing:-0.008em;
 		@include modular_scale("margin", 0 6);
 		padding:0;
 		
 		a {
 			@include modular_scale("font-size", 5);
-			@include modular_scale("padding", 5 0);
-			
-			&:hover {
-				color:#fff;
-			}
 		}
 	}
 
@@ -54,7 +54,11 @@ header {
 		float:left;
 		font-size:20px;
 		line-height:18px;
-		padding:22px 16px ;
+		@include modular_scale("padding", 8 4);
+		
+		&:hover {
+			color:#fff;
+		}
 	}
 	
 	.header-container {
@@ -65,12 +69,12 @@ header {
 	/* Social Component */
 	.social {
 		float:right;
-		margin:0 20px 0 0;
+		@include modular_scale("margin", 0 5 0 0);
 		
 		a {
 			color:#fff;
 			display:inline-block;
-			padding:18px 4px;
+			@include modular_scale("padding", 8 2);
 			width:20px;
 			
 			&:nth-child(1) {
@@ -85,22 +89,6 @@ header {
 			&:nth-child(3):hover { color:#1769FF; }
 			&:nth-child(4):hover { color:#397CA0; }
 		}
-	}
-
-
-
-
-	
-	.gradiant-bg {
-		background:url(../img/layout/header-gradiant.png);
-		height:225px;
-		opacity:1;
-		position:absolute;
-		width:100%;
-		z-index:1;
-		-webkit-transition: opacity 4s ease;
-		   -moz-transition: opacity 4s ease;	
-				transition: opacity 4s ease;
 	}
 }
 
@@ -119,10 +107,6 @@ nav {
 		-webkit-transition: opacity 0.5s ease;
 		   -moz-transition: opacity 0.5s ease;	
 				transition: opacity 0.5s ease;
-				
-		&:hover {
-			color:#fff;
-		}
 	}
 }
 

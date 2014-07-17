@@ -48,8 +48,10 @@ input::-moz-focus-inner {
 
 .button {
 	display:inline-block;
+    @include modular_scale("font-size", 4);
+    @include modular_scale("line-height", 6);
 	@include modular_scale("margin", 0 1 1 0);
-	@include modular_scale("padding", 3 5);
+	@include modular_scale("padding", 2 5);
 	-webkit-border-radius:3px;
 	   -moz-border-radius:3px;
 			border-radius:3px;
@@ -131,7 +133,7 @@ form label {
 textarea {
 	background:#fff;
 	border:solid 1px #ccc;
-	font-size:88.8889%;
+	@include modular_scale("font-size", 5);
 	@include modular_scale("min-height", 30);
 	@include modular_scale("padding", 3);
 	resize: none;
@@ -139,6 +141,14 @@ textarea {
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 			border-radius: 3px;
+}
+
+.dark-theme {
+	textarea {
+		background:rgba(0,0,0,0.2);
+		border:solid 1px #333;
+		color:#fff;
+	}
 }
 
 /* Inputs */
@@ -153,6 +163,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="month"] {
 	border:solid 1px #ccc;
+	@include modular_scale("font-size", 5);
 	@include modular_scale("margin", 1 0);
 	@include modular_scale("padding", 3);
 	width:100%;
@@ -162,6 +173,23 @@ input[type="month"] {
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 			border-radius: 3px;
+}
+
+.dark-theme {
+	input[type="text"], 
+	input[type="password"],
+	input[type="tel"],
+	input[type="number"],
+	input[type="search"],
+	input[type="email"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="month"] {
+		background:rgba(0,0,0,0.2);
+		border:solid 1px #333;
+		color:#fff;
+	}
 }
 
 input[type="file"] {
@@ -545,6 +573,22 @@ pre, textarea {
 	-webkit-tab-size: 3;
   	   -moz-tab-size: 3;
   			tab-size: 3;
+}
+
+/* Editable Elements */
+.editable {
+	background:rgba(0,0,0,0.4);
+	color: rgba(255,255,255,0.3);
+	@include modular_scale("padding",2);
+	-webkit-user-modify: read-write;
+	   -moz-user-modify: read-write;
+			user-modify: read-write;
+	word-wrap: break-word;
+	-webkit-line-break: after-white-space;
+	
+	&:focus {
+		color:#fff;
+	}
 }
 
 /* Tooltips */

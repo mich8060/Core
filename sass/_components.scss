@@ -187,6 +187,22 @@
 	position:fixed;
 	right:0px;
 	top:0px;
+	
+	img {
+		opacity:0.4;
+	}
+}
+
+.gradiant-bg {
+	background:url(../img/layout/header-gradiant.png);
+	height:225px;
+	opacity:1;
+	position:absolute;
+	width:100%;
+	z-index:9999;
+	-webkit-transition: opacity 4s ease;
+	   -moz-transition: opacity 4s ease;	
+			transition: opacity 4s ease;
 }
 
 /* Success Message Component */
@@ -386,101 +402,47 @@
 	
 }
 
-/* Pager Component */
-.onepage { 
-	overflow:hidden; 
-	min-height:500px; 
-	position:relative;
-}
+.profile {
+	color:#ddd;
+	display:block;
+	@include modular_scale("line-height", 5);
+	@include modular_scale("margin", 10 5 5 0);
 	
-.onepage .slides {
-	bottom:0px; 
-	left:0px; 
-	overflow:hidden;
-	position:absolute; 
-	right:0px; 
-	top:0px;
-}
-
-.onepage .slides .slide-bg { 
-	bottom:0px;
-	left:0px; 
-	overflow:hidden;
-	position:absolute;
-	right:0px; 
-	top:0px;
-	text-align:center;
-	outline:solid 1px red;
-}
-
-.onepage .slides .stage {
-	bottom:0px;
-	color:#fff;
-	left:0px;
-	position:absolute;
-	right:0px; 
-	text-align:center;
-	top:0px;
-}
-
-.onepage .slides canvas {
-	position:absolute;
-	left:50%;
-	top:50%;
-	margin:-300px 0 0 -300px;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 700px) { 
 	
-	.onepage { 
-		overflow:visible; 
-		height:auto; 
-		position:static;
+	&:hover {
+		color:#ddd;
 	}
 	
-	.onepage .slides {
-		position:static;
-		height:480px;
+	strong {
+		color:#fff;
+		display:block;
+	}
+	
+	.image {
+		border-radius:300px;
+		@include modular_scale("margin", 5 0);
 		overflow:hidden;
+		width:50%;
 	}
 }
 
-/* Spec Component */
-
-.spec {
-	margin:10px 0;
-}
-.spec dt {
-	float:left;
-	margin:0 20px 0 0;
-	width:50%;
-}
-
-.spec dd {
-	margin:0 0 20px 0;
-	overflow:hidden;
+/* Social Listing */
+.social-list {
+	@include modular_scale("margin", 6 0);
+	a {
+		color:#fff;
+		display:block;
+		
+		&:hover {
+			opacity:0.5
+		}
+	}
 }
 
-/* Vertical Dot Component */	
-.vertical-dots { 
-	display:block; 
-	position:absolute; 
-	right:10px; 
-	top:40%; 
-	z-index:99999;
+.story-section {
+	@include modular_scale("padding", 30 0 10 0);
 }
 
-.vertical-dots li { 
-	background:#fff; 
-	color:#fff; 
-	display:block; 
-	height:7px; 
-	margin:7px 0; 
-	width:7px;
-	-webkit-border-radius:7px;
-	   -moz-border-radius:7px;
-			border-radius:7px;
-}
 
 /* Prettify Component */
 .pln{color:#e682a9}
