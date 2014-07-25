@@ -1,15 +1,24 @@
 .about {
 	color:#fff;
-	@include modular_scale("padding",90 0);
+	@include modular_scale("padding",60 0);
 }
 .articles {
 	background-size:100% auto;
 }
+.books {
+	color:#fff;
+	@include modular_scale("padding",40 0 20 0);
+}
 .contact {
+	color:#fff;
+	@include modular_scale("padding",40 0 20 0);
+}
+.discoveries {
 	color:#fff;
 	@include modular_scale("padding",40 0 90 0);
 }
-.discoveries {
+.book-entry {
+	background:#000;
 	color:#fff;
 	@include modular_scale("padding",40 0 90 0);
 }

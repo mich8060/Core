@@ -1,3 +1,21 @@
+.full-container {
+	height:100%;
+	@include modular_scale("margin", 0 9);
+	position:relative;
+	-webkit-box-sizing: border-box; 
+	   -moz-box-sizing: border-box; 
+			box-sizing: border-box;
+}
+.wide-container {
+	height:100%;
+	margin:0 auto;
+	min-width:320px;
+	max-width:1200px;
+	position:relative;
+	-webkit-box-sizing: border-box; 
+	   -moz-box-sizing: border-box; 
+			box-sizing: border-box;	
+}
 .outer-container {
 	height:100%;
 	margin:0 auto;
@@ -85,6 +103,9 @@
 .flush { padding:0; }
 	.flush-vertical { @include modular_scale("padding", 0 2); }
 	.flush-horizontal { @include modular_scale("padding", 2 0); }
+.fluff { @include modular_scale("padding", 4); }
+	.fluff-vertical { @include modular_scale("padding", 4 0); }
+	.fluff-horizontal { @include modular_scale("padding", 0 4); }
 
 .push_2 { left:50%; }
 .push_3 { left:33.333%; }

@@ -1,6 +1,6 @@
 <div class="contact dark-theme">
-	<div class="fullscreen"><img src="http://38.media.tumblr.com/a35a6be745f3f60dda5bc4734184ba17/tumblr_n5w6lctTqq1st5lhmo1_1280.jpg" alt="" /></div>
-	<div class="outer-container">
+	<div class="fullscreen"><img src="http://static.tumblr.com/00fde5cc4292fab01af9ebf9b39cf347/7v4ocid/TAmn6k2pe/tumblr_static_b33z8k89468gksc8gc8kcs8c4_2048_v2.jpg" style="opacity:0.3" alt="" /></div>
+	<div class="inner-container">
 		<div class="grid_1">
 			<h2 class="light">Good things come from good conversations.</h2>
 			<h1>Contact, Connect, or Converse</h1>
@@ -17,7 +17,7 @@
 					<textarea placeholder="Subject"></textarea>
 				</p>
 				<p>
-					<input type="submit" value="Send Message" />
+					<input type="submit" value="Send Message" class="white-outline" />
 				</p>
 			</form>
 		</div>

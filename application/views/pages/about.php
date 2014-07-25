@@ -1,6 +1,6 @@
 <div class="about">
 	<div class="fullscreen">
-		<img src="<? echo base_url(); ?>img/layout/farm.jpg" alt="" />
+		<img src="http://wefunction.com/wordpress/wp-content/uploads/2014/01/017.jpg" style="opacity:0.4" alt="" />
 	</div>
 	<div class="outer-container">
 		<div class="grid_1">
@@ -51,7 +51,7 @@
 			<div class="grid_2 flush">
 				<div class="grid_2 flush">
 					<a href="http://www.linkedin.com/in/joelbrazle" target="_blank" class="profile">
-						<div class="image"><img src="http://placehold.it/200" alt="" /></div>
+						<div class="image"><img src="<? echo base_url(); ?>img/layout/michael_stevens_joel_brazle.jpg" alt="" /></div>
 						<strong>Joel Brazle</strong>
 						Director, E-commerce &amp; Customer Experience 
 						<div>Zappos.com</div>

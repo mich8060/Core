@@ -246,13 +246,13 @@ h5 {
 /* Hyperlinks */
 
 a { 
-	color: #397ca0; 
+	color: colors(gold); 
 	-webkit-tap-highlight-color: rgba(0,0,0,0); 
 	@include prefix("transition", "border, color 0.3s ease");
 }
-	a:hover { color: #397CA0; }
+	a:hover { color:colors(gold); }
 	
-	p a[href^="http://"]:not([href*="localhost:8888"])::after {
+	p a[href^="http://"]:not([href*="localhost:8888"]):not([class*="button"])::after {
 		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPFJREFUeNrs2OEJwjAQBeBTHMBRHMFRsllGqRt0lI5QIyiIaGrTu3fp8R5cfxWSj6O5UBG/5FKzYrkmR4FoYiQKRqJgJApGomC6y7nUtHfIAzG2dORQHlflzdw2IIZSl9aFZ/GfsM2deF/XG6KBcIesQUy9QtYgxuf7uTdIC2JpzsDP5C2IGgYK0UD8wsAgmohvGAjEAvGJMYdYIl4ZrCEIRPWKsjuEFQSOsIC4ICwgLggLSPJAWH0jCY2wPLUSEmE9RxIKgZjsCYHwuMav3ctfP0eOEiSEEEIIIYQQQgghhBCymFPlOs2OEEJIIMhdgAEADbswz/ZOWYAAAAAASUVORK5CYII=);
 		background-size:10px 10px;
 		content: "";
@@ -390,7 +390,7 @@ blockquote {
 
 address {
 	@include modular_scale("line-height",5);
-	@include modular_scale("margin", 5);
+	@include modular_scale("margin", 5 0);
 }
 address a,
 address span { display:block; }

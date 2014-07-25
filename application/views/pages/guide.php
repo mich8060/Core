@@ -2,6 +2,10 @@
 	<div class="inner-container">
 		<h2 class="light">Consistently Beautiful &amp; Simple</h2>
 		<h1>Human Interface Guidelines</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et justo quis erat consequat 
+			faucibus eu at sapien. Ut sollicitudin erat non cursus sollicitudin.
+		</p>
 	</div>
 </div>
 <div class="inner-container">
@@ -394,10 +398,20 @@ pre {
 
 		<p>
 			<input type="file" id="file" />
-			<label for="file">Select a File</label>
-			<input type="submit" value="Submit" />
-			<input type="button" value="Button" />
-			<input type="reset" />
+			<label for="file" class="black">Select a File</label>
+			<input type="submit" value="Submit" class="black" />
+			<input type="button" value="Button" class="black" />
+			<input type="reset" class="black" />
+		</p>
+		<p>
+			<a href="#" class="button black">Button</a>
+			<a href="#" class="button black-outline">Button</a>
+			<a href="#" class="button white">Button</a>
+			<a href="#" class="button white-outline">Button</a>
+			<a href="#" class="button blue">Button</a>
+			<a href="#" class="button blue-outline">Button</a>
+			<a href="#" class="button green">Button</a>
+			<a href="#" class="button green-outline">Button</a>
 		</p>
 		<hr />
 		<h2 class="normal">Tables</h2>
@@ -460,4 +474,5 @@ pre {
 	<div class="grid_1">
 		<p>Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 	</div>
+	<div class="clear"></div>
 </div>

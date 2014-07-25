@@ -152,7 +152,13 @@
 	}
 }
 
-
+.book-entry {
+	.cover {
+		img {
+			width:80%;
+		}
+	}
+}
 
 /* Progress Component */
 .progress {
@@ -187,9 +193,11 @@
 	position:fixed;
 	right:0px;
 	top:0px;
+	z-index:0;
 	
 	img {
-		opacity:0.4;
+		opacity:0.5;
+		width:100%;
 	}
 }
 
