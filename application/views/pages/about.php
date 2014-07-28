@@ -1,6 +1,6 @@
 <div class="about">
 	<div class="fullscreen">
-		<img src="http://wefunction.com/wordpress/wp-content/uploads/2014/01/017.jpg" style="opacity:0.4" alt="" />
+		<img src="<? echo base_url(); ?>/img/layout/1408755246_4f26e32fcd_o.jpg" style="opacity:0.2" alt="" />
 	</div>
 	<div class="outer-container">
 		<div class="grid_1">

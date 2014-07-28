@@ -1,5 +1,5 @@
 <div class="articles dark-theme">
-	<div class="fullscreen"><img src="http://localhost:8888/core/img/articles/michael_stevens_human_interface_guidlines.jpg" alt="" /></div>
+	<div class="fullscreen"><img src="http://localhost:8888/core/img/layout/03.jpg" alt="" /></div>
 	<div class="page-title" style="background:transparent;">
 		<div class="wide-container">
 			<div class="grid_1">
@@ -14,7 +14,7 @@
 	</div>
 	<div class="clear"></div>
 		<div class="grid_1">
-			<ul class="tabs">
+			<ul class="tabs" style="display:none;">
 				<li><a href="#" class="active">All</a></li>
 				<li><a href="#">Articles</a></li>
 				<li><a href="#">Work</a></li>
@@ -23,25 +23,18 @@
 			</ul>
 		</div>
 	<div class="clear"></div>
-	<div class="wide-container">
+	<div class="feed wide-container">
 		<? foreach($data as $a) {?>
-			<div class="grid_4 fluff">
-				<a href="<? echo base_url().$a->url; ?>" class="article-card" style="background-image:url(<? echo $a->image; ?>);">
-					<div class="outer-container">
-						<div class="title">
-							<h4 class="normal"><? echo $a->subheadline; ?></h4>
-							<h3><? echo $a->headline; ?></h3>
-						</div>
-						<div class="clear"></div>
+
+				<a href="<? echo base_url().$a->url; ?>" class="item article">
+					<div class="preview" style="background-image:url(<? echo $a->image; ?>);"></div>
+					<div class="title">
+						<h5 class="normal"><? echo $a->subheadline; ?></h5>
+						<h3><? echo $a->headline; ?></h3>
+						<p class="hint"><? echo substr($a->lead, 0, 90); ?>...</p>
 					</div>
-					<div class="shadow"></div>
 				</a>
-			</div>
 		<? } ?>
 	</div>
 	<div class="clear"></div>
-	<div class="article-pagination">
-		<a href="#" class="button blue-solid">Prev</a>
-		<a href="#" class="button blue-solid">Next</a>
-	</div>
 </div>

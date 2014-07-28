@@ -1,5 +1,5 @@
 <div class="contact dark-theme">
-	<div class="fullscreen"><img src="http://static.tumblr.com/00fde5cc4292fab01af9ebf9b39cf347/7v4ocid/TAmn6k2pe/tumblr_static_b33z8k89468gksc8gc8kcs8c4_2048_v2.jpg" style="opacity:0.3" alt="" /></div>
+	<div class="fullscreen"><img src="<? echo base_url(); ?>/img/layout/SplitShire_IMG_4928.jpg" style="opacity:0.3" alt="" /></div>
 	<div class="inner-container">
 		<div class="grid_1">
 			<h2 class="light">Good things come from good conversations.</h2>

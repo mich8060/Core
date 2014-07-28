@@ -1,6 +1,7 @@
 .full-container {
 	height:100%;
 	@include modular_scale("margin", 0 9);
+	@include modular_scale("padding", 0 5);
 	position:relative;
 	-webkit-box-sizing: border-box; 
 	   -moz-box-sizing: border-box; 
@@ -11,6 +12,7 @@
 	margin:0 auto;
 	min-width:320px;
 	max-width:1200px;
+	@include modular_scale("padding", 0 5);
 	position:relative;
 	-webkit-box-sizing: border-box; 
 	   -moz-box-sizing: border-box; 

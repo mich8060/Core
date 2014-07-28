@@ -10,6 +10,7 @@
 			</a>
 		</h1>
 		<nav>
+			<a href="<? echo base_url(); ?>work">Work</a>
 			<a href="<? echo base_url(); ?>about">About</a>
 			<a href="<? echo base_url(); ?>discoveries">Discoveries</a>
 			<a href="<? echo base_url(); ?>contact">Contact</a>

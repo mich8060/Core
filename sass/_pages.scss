@@ -9,6 +9,12 @@
 	color:#fff;
 	@include modular_scale("padding",40 0 20 0);
 }
+	.book-entry {
+		background:#000;
+		color:#fff;
+		@include modular_scale("padding",40 0 90 0);
+	}
+
 .contact {
 	color:#fff;
 	@include modular_scale("padding",40 0 20 0);
@@ -17,8 +23,13 @@
 	color:#fff;
 	@include modular_scale("padding",40 0 90 0);
 }
-.book-entry {
-	background:#000;
+
+.resources {
 	color:#fff;
-	@include modular_scale("padding",40 0 90 0);
+	@include modular_scale("padding",40 0 20 0);
+}
+
+.work {
+	color:#fff;
+	@include modular_scale("padding",40 0 20 0);
 }

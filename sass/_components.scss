@@ -2,76 +2,26 @@
 
 
 /* Article Card Component */
-.article-card {
-	background-color:#000;
-	background-size:180% auto;
-	background-position:center top;
-	background-repeat:no-repeat;
-	outline:solid 1px #333;
-	box-shadow:0 0 10px rgba(0,0,0,0.2);
-	color:#fff;
-	display:block;
-	min-height:340px;
-	position:relative;
-	
-	&:hover {
-		color:#fff;
-		outline:solid 1px #fff;
-		
-		.shadow {
-			background:rgba(0,0,0,0);
-		}
+.article {
+	.preview {
+		background-position:center top;
+		background-repeat:no-repeat;
+		background-size:400px 200px;
+		@include modular_scale("height", 40);
 	}
-	
-	.shadow {
-		background:rgba(0,0,0,0.2);
-		bottom:0px;
-		left:0px;
-		position:absolute;
-		right:0px;
-		top:0px;
-	}
-	
 	.title {
-		@include modular_scale("padding",60 4 8 4);
-		position:relative;
-		z-index:9;
-		
-		h5 {
-			@include modular_scale("margin",0 0 1 0);	
-		}
+		@include modular_scale("padding", 5);	
 	}
 }
 
-
-@media only screen and (min-width: 0px) and (max-width: 760px) {
+.feed {
 	
-	.article-card {
-		margin:10px 0 20px 0;
+	.item {
+		background:colors(white);
+		color:colors(black);
+		display:block;
+		@include modular_scale("margin", 5 2);
 	}
-	
-	.article-card-title {
-		padding:20px 0;
-	}
-	
-	.article-card-title h2,
-	.article-card-title h4 {
-		border-left:solid 3px #fff;
-		padding:0 20px;
-	}
-	 
-	.article-card-bottom {
-		padding:0 20px;
-	}
-}
-
-.article-card-bottom span {
-	display:block;
-}
-
-.article-pagination {
-	text-align:center;
-	padding:50px 0;
 }
 
 /* Comment Component */
