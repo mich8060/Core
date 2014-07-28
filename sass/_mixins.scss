@@ -29,9 +29,6 @@
   	@if $point == mobile {
     	@media only screen and (min-width: 0px) and (max-width: 760px) { @content; }
   	}
-  	@else if $point == tablet {
-		@media only screen and (min-width: 761px) and (max-width: 999px) { @content; }
-  	}
 }
 
 @mixin image-2x($image, $width, $height) {

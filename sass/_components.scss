@@ -3,24 +3,76 @@
 
 /* Article Card Component */
 .article {
+	background:colors(white);
+	color:colors(black);
+	
+	&:hover {
+		color:colors(black);
+	}
+	
 	.preview {
 		background-position:center top;
 		background-repeat:no-repeat;
-		background-size:400px 200px;
-		@include modular_scale("height", 40);
+		background-size:800px 400px;
+		@include modular_scale("height", 80);
 	}
 	.title {
 		@include modular_scale("padding", 5);	
 	}
 }
 
+.dribbble-likes {
+	.author {
+		background:rgba(0,0,0,0.8);
+		bottom:8px;
+		color:colors(white);
+		@include modular_scale("font-size",3);
+		@include modular_scale("padding", 2);
+		@include modular_scale("line-height", 3);
+		position:absolute;
+		right:8px;
+	}
+}
+
+.status {
+	background:colors(white);
+	color:colors(black);
+	font-weight:weight(regular);
+	
+	&:hover {
+		color:colors(black);
+	}
+	
+	.update {	
+		@include modular_scale("font-size",5);
+		@include modular_scale("padding", 8);
+	}
+}
+
+.quote {
+	
+	.quotes {
+		background:rgba(0,0,0,0.3);
+		color:colors(white);
+		@include modular_scale("font-size",6);
+		font-family:fonts(secondary);
+		font-weight:weight(light);
+		@include modular_scale("line-height", 9);
+		@include modular_scale("padding", 10 8 12 8);
+	}
+	
+	.author {
+		color:#999;
+		@include modular_scale("font-size",3);
+	}
+}
+
 .feed {
 	
 	.item {
-		background:colors(white);
-		color:colors(black);
 		display:block;
-		@include modular_scale("margin", 5 2);
+		@include modular_scale("margin", 5);
+		position:relative;
 	}
 }
 

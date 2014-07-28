@@ -8,13 +8,15 @@ $shots = $query->shots;
 <footer>
 	<div class="outer-container">
 		<div class="grid_3">
-			<h4>Michael Stevens</h4>
-			<address>
-				1097 North Chidester Dr. <br />
-				North Salt Lake, UT 84054
-			</address>
-			<div>Email: design@michael-stevens.me</div>
-			<div>Phone: 801-824-2870</div>
+			<div class="address">
+				<h4>Michael Stevens</h4>
+				<address>
+					1097 North Chidester Dr. <br />
+					North Salt Lake, UT 84054
+				</address>
+				<div>Email: <a href="mailto:design@michael-stevens.me">design@michael-stevens.me</a></div>
+				<div>Phone: <a href="tel:+18018242870">801-824-2870</a></div>
+			</div>
 			<p>
 				<div class="icons-social">&#62217;</div>
 				<div class="icons-social">&#62220;</div>
@@ -24,29 +26,30 @@ $shots = $query->shots;
 				<div class="icons-social">&#62229;</div>
 			</p>
 		</div>
-			<div class="grid_3">
-				<div class="grid_1 flush-horizontal">
-					<h5>Latest Articles</h5>
-				</div>
-				<div class="grid_1 flush-horizontal">
-					<a href="#">
-						<div>Article Name</div>
-						<div>December 24, 2014</div>
-					</a>
-					<a href="#">
-						<div>Article Name</div>
-						<div>December 24, 2014</div>
-					</a>
-					<a href="#">
-						<div>Article Name</div>
-						<div>December 24, 2014</div>
-					</a>
-					<a href="#">
-						<div>Article Name</div>
-						<div>December 24, 2014</div>
-					</a>
-				</div>
+		<? if($mobile != "Phone") { ?>
+		<div class="grid_3">
+			<div class="grid_1 flush-horizontal">
+				<h5>Latest Articles</h5>
 			</div>
+			<div class="grid_1 flush-horizontal">
+				<a href="#">
+					<div>Article Name</div>
+					<div>December 24, 2014</div>
+				</a>
+				<a href="#">
+					<div>Article Name</div>
+					<div>December 24, 2014</div>
+				</a>
+				<a href="#">
+					<div>Article Name</div>
+					<div>December 24, 2014</div>
+				</a>
+				<a href="#">
+					<div>Article Name</div>
+					<div>December 24, 2014</div>
+				</a>
+			</div>
+		</div>
 		<div class="grid_3 flush-horizontal">
 			<div class="grid_1"><h5>Recent Dribbble's</h5></div>
 			<?php
@@ -60,6 +63,7 @@ $shots = $query->shots;
 				<a href="#">View all Dribbble's</a>
 			</div>
 		</div>
+		<? } ?>
 		<div class="grid_1">
 			<div class="grid_1 flush-horizontal">
 				<a href="<? echo base_url(); ?>">Home</a> |

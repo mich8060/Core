@@ -87,6 +87,7 @@ input::-moz-focus-inner {
 }
 
 .white-outline {
+	background:transparent;
 	border:solid 1px #f6f6f6;
 	color:#f6f6f6;
 	
@@ -716,6 +717,12 @@ pre, textarea {
 	text-align:center;
 	text-transform:uppercase;
 	@include modular_scale("width",12);
+}
+
+video {
+	height: auto   !important;
+	margin:0 0 -10px 0;
+  	width: 100%    !important;
 }
 
 

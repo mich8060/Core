@@ -1,3 +1,5 @@
+@import 'mixins';
+
 html {
 	height:100%;
 }
@@ -125,7 +127,11 @@ footer {
 	position:relative;
 	z-index:99999;
 	
-
+	@include breakpoint(mobile) { 
+		@include modular_scale("padding",10 5);
+			overflow:hidden;
+			text-align:center;
+	}
 	
 	h4, h5 {
 		color:colors(white);
@@ -141,6 +147,12 @@ footer {
 			display:block;
 			@include modular_scale("line-height",5);
 			@include modular_scale("padding",1 0);
+		}
+	}
+	
+	.address {
+		a {
+			display:inline-block;
 		}
 	}
 }

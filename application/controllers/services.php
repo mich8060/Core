@@ -10,7 +10,11 @@ class Services extends CI_Controller {
 		// Existing API's 
 		$list = array(
 			"articles",
-			"comments"
+			"comments",
+			"feed",
+			"quote",
+			"status",
+			"books"
 		);
 		
 		if(in_array(strtolower($data[2]), $list)){
