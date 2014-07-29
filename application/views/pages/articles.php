@@ -1,7 +1,7 @@
 <div class="articles dark-theme">
-	<div class="fullscreen"><img src="http://localhost:8888/core/img/layout/03.jpg" alt="" /></div>
+	<div class="fullscreen"><img src="<? echo base_url(); ?>/core/img/layout/03.jpg" alt="" /></div>
 	<div class="page-title" style="background:transparent;">
-		<div class="inner-container" style="text-align:center;">
+		<div class="outer-container" style="text-align:center;">
 			<div class="grid_1">
 				<h2 class="light">Hello, I'm Michael Stevens</h2>
 				<h1 class="light">UX Designer, UX Mananger, &amp; UI Developer</h1>
@@ -23,7 +23,7 @@
 			</ul>
 		</div>
 	<div class="clear"></div>
-	<div class="feed outer-container" style="display:none;">
+	<div class="feed inner-container">
 		<? foreach($data as $d){ ?>
 			<? if($d['type'] == "article") { ?>
 			<a href="<? echo $d['url']; ?>" class="item <? echo $d['type']; ?>">
