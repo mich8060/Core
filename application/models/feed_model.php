@@ -2,6 +2,12 @@
 
 class Feed_model extends CI_Model {
 	
+	function index(){
+		$total = $this->read();
+		$results = array_slice($total, 0, 20);
+		return $results;
+	}
+	
 	function read(){
 		// Build Dribbble Likes Feed.
 		$dribbble_likes = json_decode(file_get_contents('http://api.dribbble.com/players/mich8060/shots/likes?page=1&per_page=20'));
@@ -72,6 +78,19 @@ class Feed_model extends CI_Model {
 		}	
 		
 		$result = array_merge_recursive($result, $stat);
+		
+		$sites = json_decode(file_get_contents(base_url().'/services/sites'));
+		$site = array();
+		foreach($sites as $s){
+			$site[] = array(
+				'type'	=>	'site',
+				'image'	=>	$s->img,
+				'url'	=>	$s->url,
+				'date'	=>	$s->date
+			);
+		}	
+		
+		$result = array_merge_recursive($result, $site);
 		
 		// Order Feed by Date
 		usort($result, function($a, $b) {

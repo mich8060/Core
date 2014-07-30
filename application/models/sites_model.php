@@ -11,13 +11,27 @@ class Sites_model extends CI_Model {
 		$this->db->query(
 			"INSERT INTO sites (
 				img,
-				url
+				url,
+				date
 			) 
 			VALUES(
 				'".$file."',
-				'".$obj['url']."'
+				'".$obj['url']."',
+				'".date('Y-m-d H:i:s')."'
 			)"
 		);
+	}
+	
+	function read() {
+		$query = $this->db->query(
+				'SELECT * FROM sites ORDER BY id ASC'
+		);
+		if($query->num_rows() > 0) {
+			foreach($query->result() as $row){
+				$data[] = $row;
+			}
+			return $data;
+		}
 	}
 }
 

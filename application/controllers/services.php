@@ -14,7 +14,8 @@ class Services extends CI_Controller {
 			"feed",
 			"quote",
 			"status",
-			"books"
+			"books",
+			"sites"
 		);
 		
 		if(in_array(strtolower($data[2]), $list)){

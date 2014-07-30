@@ -1,5 +1,5 @@
 <div class="articles dark-theme">
-	<div class="fullscreen"><img src="<? echo base_url(); ?>/core/img/layout/03.jpg" alt="" /></div>
+	<div class="fullscreen"><img src="<? echo base_url(); ?>img/layout/03.jpg" alt="" /></div>
 	<div class="page-title" style="background:transparent;">
 		<div class="outer-container" style="text-align:center;">
 			<div class="grid_1">
@@ -44,6 +44,11 @@
 				<div class="author">
 					By <? echo $d['author']; ?>
 				</div>
+			</a>	
+			<? } ?>
+			<? if($d['type'] == "site") { ?>
+			<a href="<? echo $d['url']; ?>" target="_blank" class="item <? echo $d['type']; ?>">
+				<img src="<? echo $d['image']; ?>" alt="" />
 			</a>	
 			<? } ?>
 			<? if($d['type'] == "quote") { ?>
