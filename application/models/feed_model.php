@@ -83,6 +83,12 @@ class Feed_model extends CI_Model {
 		return array_reverse($result);
 	}
 	
+	function range($offset, $limit) {
+		$total = $this->read();
+		$results = array_slice($total, $offset, $limit);
+		return $results;
+	}
+	
 }
 
 /* End of file feed_model.php */

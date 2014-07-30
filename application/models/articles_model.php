@@ -174,7 +174,7 @@ class Articles_model extends CI_Model {
 				 FROM articles JOIN profiles ON articles.profile_id=profiles.id 
 				 JOIN simpleurl ON articles.simple_id=simpleurl.id 
 				 JOIN categories ON articles.cat_id=categories.id 
-				 ORDER BY articles.id DESC LIMIT 0, 2'
+				 ORDER BY articles.id DESC LIMIT '.$offset.','.$limit
 		);
 		if($query->num_rows() > 0) {
 			foreach($query->result() as $row){

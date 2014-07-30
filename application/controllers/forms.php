@@ -15,6 +15,12 @@ class Forms extends CI_Controller {
 				$obj = $this->clean($_POST);
 				$this->load->model("articles_model");
 				$this->articles_model->add($obj);
+		        break;
+			case "sites":
+				$obj = $this->clean($_POST);
+				$this->load->model("sites_model");
+				$this->sites_model->add($obj);
+		        break;
 		    default:
 				show_404('/this_page_was_not_found', FALSE);
 				break;
