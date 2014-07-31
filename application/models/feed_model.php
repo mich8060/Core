@@ -19,7 +19,7 @@ class Feed_model extends CI_Model {
 				'image' =>  $s->image_url,
 				'author'=>	$s->player->name,
 				'author_url'	=>	$s->player->url,
-				'date' => $s->created_at
+				'date' => date('Y-m-d H:i:s', strtotime(substr($s->created_at,0,19)))
 			 );
 		}
 		
@@ -30,7 +30,7 @@ class Feed_model extends CI_Model {
 				'type' 	=> 	'dribbble-shots',
 			 	'url' 	=> 	$s->url,
 				'image' =>  $s->image_url,
-				'date' => $s->created_at
+				'date' => date('Y-m-d H:i:s', strtotime(substr($s->created_at,0,19)))
 			 );
 		}
 		
