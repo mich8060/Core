@@ -1,37 +1,21 @@
 <div class="contact dark-theme">
-	<div class="fullscreen"><img src="<? echo base_url(); ?>/img/layout/SplitShire_IMG_4928.jpg" style="opacity:0.3" alt="" /></div>
-	<div class="inner-container">
+	<div class="fullscreen"><img src="http://splitshire.com/wp-content/uploads/2014/02/SplitShire_IMG_2488-as-Smart-Object-1-800x500.jpg" style="opacity:0.0" alt="" /></div>
+	<div class="outer-container">
 		<div class="grid_1">
-			<h2 class="light">Good things come from good conversations.</h2>
+			<h3 class="light">Good things come from good conversations.</h3>
 			<h1>Contact, Connect, or Converse</h1>
 		</div>
-		<div class="grid_3-2">
-			<form action="">
-				<p>
-					<input type="text" placeholder="Your Name" />
-				</p>
-				<p>
-					<input type="email" placeholder="Email Address" />
-				</p>
-				<p>
-					<textarea placeholder="Subject"></textarea>
-				</p>
-				<p>
-					<input type="submit" value="Send Message" class="white-outline" />
-				</p>
-			</form>
-		</div>
-		<div class="grid_3">
-			<div class="grid_5-4 push_5 flush-vertical">
-				<p class="hint">
-					<strong>Geo:</strong> 40.861367, -111.939283.
-				</p>
-				<p class="hint">
-					Feel free to drop me a line with feedback about the site, talk about cool stuff you are working on, or potential design work.
-				</p>
-				<p class="hint">
-					I try to respond to all emails, but sometimes I don't.
-				</p>
+		<div class="grid_1">
+			<div class="stepped-form">
+				<div class="step">
+					<div class="values">
+						<div class="label">What's your email address?</div>
+						<div class="editable">Email Address</div>
+						<div class="error">Please enter a valid email address</div>
+					</div>
+						<a href="#" class="button blue">Continue</a> <span class="hint">OR PRESS ENTER</span>
+					<div class="clear"></div>
+				</div>
 			</div>
 		</div>
 		<div class="clear"></div>

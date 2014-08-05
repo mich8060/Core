@@ -208,20 +208,20 @@ p::selection {
 }
 
 /* Headlines */
-h1, h2, h3, h4, h5 { font-weight:700; text-indent:-2px; }
+h1, h2, h3, h4, h5 { font-weight:weight(bold); text-indent:-2px; }
 h1 { 
 	@include modular_scale("font-size",12); 
 	@include modular_scale("line-height",10); 
 	letter-spacing:-0.020em;
 }
 h2 { 
-	@include modular_scale("font-size",7); 
-	@include modular_scale("line-height",6);
+	@include modular_scale("font-size",9); 
+	@include modular_scale("line-height",7);
 	letter-spacing:-0.020em;
 }
 h3 { 
-	@include modular_scale("font-size",6); 
-	@include modular_scale("line-height",5);
+	@include modular_scale("font-size",7); 
+	@include modular_scale("line-height",6);
 	letter-spacing:-0.020em;
 }
 h4 { 
@@ -307,7 +307,7 @@ p.lead {
 }
 
 .hint {
-	@include modular_scale("font-size",4);
+	@include modular_scale("font-size",3);
 	@include modular_scale("line-height",6);
 	font-weight:weight(book);
 	-webkit-font-smoothing: subpixel-antialiased; 

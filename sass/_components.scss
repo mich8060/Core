@@ -215,35 +215,6 @@
 			transition: opacity 4s ease;
 }
 
-/* Success Message Component */
-.success-msg {
-	background:#397ca0;
-	color:#fff;
-	display:none;
-	font-weight:600;
-	margin:-1px -1px 10px -1px;
-	padding:10px;
-	-webkit-border-radius:3px 3px 0 0;
-	   -moz-border-radius:3px 3px 0 0;
-			border-radius:3px 3px 0 0;
-}
-
-/* Error Message Component */
-.error-msg {
-	background:#e74c3c;
-	color:#fff;
-	display:none;
-	font-weight:600;
-	margin:-1px -1px 10px -1px;
-	padding:10px;
-	-webkit-border-radius:3px 3px 0 0;
-	   -moz-border-radius:3px 3px 0 0;
-			border-radius:3px 3px 0 0;
-}
-
-.error-msg .icons {
-	font-weight:500;
-}
 
 /* Article Detail Styles */
 .article-detail {
@@ -451,6 +422,40 @@
 
 .story-section {
 	@include modular_scale("padding", 30 0 10 0);
+}
+
+/* Stepped Form Component */
+.stepped-form {
+	min-height:400px;
+	outline:solid 1px white;
+	
+	.editable {
+		@include modular_scale("font-size",12); 
+		font-weight:weight(bold);
+		@include modular_scale("line-height",10); 
+		letter-spacing:-0.020em;
+	}
+	
+	.label {
+		@include modular_scale("font-size",7); 
+		font-weight:weight(bold);
+		@include modular_scale("line-height",6);
+		letter-spacing:-0.020em;
+	}
+	
+	.error {
+		color:colors(red);
+		font-weight:weight(bold);
+	}
+	
+	.step {
+		bottom:0px;
+		left:8px;
+		@include modular_scale("padding", 20 0);
+		position:absolute;
+		right:8px;
+		top:0px;
+	}
 }
 
 
